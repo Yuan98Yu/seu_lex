@@ -1,13 +1,14 @@
 # coding:utf-8
-from lexfile_parser import LexFileParser
+from .lexfile_parser import LexFileParser
 from argparse import ArgumentParser
-argparse = ArgumentParser(prog="lex writen by Yuan Yu, 2019.5.12",
-                          description="""
+
+arg_parse = ArgumentParser(prog="lex writen by Yuan Yu, 2019.5.12",
+                           description="""
                           占位
                           """)
-argparse.add_argument("inputFile", help="input file's url")
-argparse.add_argument("--output", "-o", help="output file's url")
-args = argparse.parse_args()
+arg_parse.add_argument("inputFile", help="input file's url")
+arg_parse.add_argument("--output", "-o", help="output file's url")
+args = arg_parse.parse_args()
 if args.output is None:
     args.output = "output.l"
 

@@ -1,11 +1,8 @@
 # coding:utf-8
 
-from structs import Rule, LexfileState
+from .structs import Rule, LexfileState
 import logging
 import os
-
-
-
 
 
 class LexFileParser:
@@ -39,7 +36,7 @@ class LexFileParser:
 
             lineCount += 1
             line = line.strip()
-            if line =="":
+            if line == "":
                 continue
 
             if state == LexfileState.BeforePart1:
