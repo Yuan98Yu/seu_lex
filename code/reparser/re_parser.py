@@ -1,6 +1,7 @@
 from structs import Rule, NFAstate, NFA
-from .re2suffix import Re2suffix
-from .suffix2NFA import Suffix2NFA
+from .re2suffix_parser import Re2suffix_parser
+from .suffix2NFAParser import Suffix2NFA_parser
+from .NFA2DFA import NFA2DFA_parser
 import types
 import re
 
@@ -13,14 +14,18 @@ class RE_parser:
     """
     def __init__(self, rules):
         self.rules = rules
-        self.Re2suffix_parser = Re2suffix()
-        self.suffix2NFA_parser = Suffix2NFA()
+        self.Re2suffix_parser = Re2suffix_parser()
+        self.suffix2NFA_parser = Suffix2NFA_parser()
+        self.NFA2DFA_parser = NFA2DFA_parser()
 
     def parseRegexs(self):
         # re标准化
         pass
         suffix_rules = self.Re2suffix_parser.re2suffix(self.rules)
-        self.suffix2NFA_parser.suffix2NFA(suffix_rules)
+        NFA = self.suffix2NFA_parser.suffix2NFA(suffix_rules)
+        DFA = self.NFA2DFA_parser.NFA2DFA(NFA)
+
+
 
 
 

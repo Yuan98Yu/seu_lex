@@ -1,7 +1,7 @@
 from structs import Rule
 
 
-class Re2suffix:
+class Re2suffix_parser:
     def re2suffix(self, rules):
         for rule in rules:
             # 仅处理pattern,即正则式

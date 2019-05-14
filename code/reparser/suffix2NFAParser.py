@@ -1,7 +1,7 @@
 from structs import Rule, NFAstate, NFA
 
 
-class Suffix2NFA:
+class Suffix2NFA_parser:
     def __init__(self):
         self.number = 0
         self.NFA_stack = []
