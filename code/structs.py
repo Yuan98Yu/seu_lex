@@ -4,6 +4,8 @@ from collections import defaultdict
 
 ALLSET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"#%'()*+,-./:;<=>?[\\]^{|}_ \n\t\v\f~&"
 
+ESCAPEDCHARS = {'.', '|', '*', '(', ')', '+', '?', '{', '}', '[', ']'}
+
 
 class Rule:
     def __init__(self, pattern, action):
