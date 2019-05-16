@@ -1,8 +1,9 @@
-from structs import Rule, NFAstate, NFA
+from ..structs import Rule, NFAstate, NFA, DFA
 from .re2suffix import Re2suffix_parser
 from .suffix2NFA import Suffix2NFA_parser
 from .NFA2DFA import NFA2DFA_parser
 from .DFAMinimization import DFA_Minimization_parser
+from .DFA2Array import DFA2Array_parser
 import types
 import re
 
@@ -19,14 +20,16 @@ class RE_parser:
         self.suffix2NFA_parser = Suffix2NFA_parser()
         self.NFA2DFA_parser = NFA2DFA_parser()
         self.DFA_minimization_parser = DFA_Minimization_parser()
+        self.DFA2Array_parser = DFA2Array_parser()
 
     def parseRegexs(self):
         # re标准化
         pass
         suffix_rules = self.Re2suffix_parser.re2suffix(self.rules)
-        NFA = self.suffix2NFA_parser.suffix2NFA(suffix_rules)
-        DFA = self.NFA2DFA_parser.NFA2DFA(NFA)
-        DFA = self.DFA_minimization_parser.DFA_minimize(DFA)
+        nfa = self.suffix2NFA_parser.suffix2NFA(suffix_rules)
+        dfa = self.NFA2DFA_parser.NFA2DFA(nfa)
+        dfa = self.DFA_minimization_parser.DFA_minimize(dfa)
+        arrays, endVec = self.DFA2Array_parser.dfa2array(dfa, suffix_rules)
 
     def _form_master_re(self, regex_list, reflags, ldict, toknames):
         if not regex_list:

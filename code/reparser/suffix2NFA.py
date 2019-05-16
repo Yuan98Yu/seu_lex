@@ -1,4 +1,4 @@
-from structs import Rule, NFAstate, NFA
+from ..structs import Rule, NFAstate, NFA
 
 
 class Suffix2NFA_parser:

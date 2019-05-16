@@ -1,4 +1,4 @@
-from structs import *
+from ..structs import *
 
 
 class NFA2DFA_parser:

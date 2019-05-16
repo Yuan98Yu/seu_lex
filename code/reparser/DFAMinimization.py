@@ -1,4 +1,4 @@
-from structs import ALLSET, DFAstate, DFA
+from ..structs import ALLSET, DFAstate, DFA
 from random import choice
 
 

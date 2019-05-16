@@ -1,4 +1,4 @@
-from structs import Rule
+from ..structs import Rule
 
 
 class Re2suffix_parser:
