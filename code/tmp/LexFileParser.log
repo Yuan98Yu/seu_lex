@@ -1,402 +1,402 @@
-48 lexfile_parser.py[line:48] DEBUG Part1 Start
-48 lexfile_parser.py[line:55] DEBUG Part1 End, Part2 Start
-48 lexfile_parser.py[line:62] DEBUG Part2 End, Part3 Start
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 17
-48 lexfile_parser.py[line:85] DEBUG add action, at line 18
-48 lexfile_parser.py[line:85] DEBUG add action, at line 19
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 20
-48 lexfile_parser.py[line:92] DEBUG pattern: /*	action: ['comment();', 'printf("MULTI_LINE_COMMENT");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 21
-48 lexfile_parser.py[line:85] DEBUG add action, at line 22
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 23
-48 lexfile_parser.py[line:92] DEBUG pattern: //"[^\n]	action: ['printf("SINGLE_LINE_COMMENT");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 26
-48 lexfile_parser.py[line:85] DEBUG add action, at line 27
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 28
-48 lexfile_parser.py[line:92] DEBUG pattern: auto	action: ['printf("AUTO");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 29
-48 lexfile_parser.py[line:85] DEBUG add action, at line 30
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 31
-48 lexfile_parser.py[line:92] DEBUG pattern: _Bool	action: ['printf("BOOL");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 32
-48 lexfile_parser.py[line:85] DEBUG add action, at line 33
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 34
-48 lexfile_parser.py[line:92] DEBUG pattern: break	action: ['printf("BREAK");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 35
-48 lexfile_parser.py[line:85] DEBUG add action, at line 36
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 37
-48 lexfile_parser.py[line:92] DEBUG pattern: case	action: ['printf("CASE");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 38
-48 lexfile_parser.py[line:85] DEBUG add action, at line 39
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 40
-48 lexfile_parser.py[line:92] DEBUG pattern: char	action: ['printf("CHAR");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 41
-48 lexfile_parser.py[line:85] DEBUG add action, at line 42
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 43
-48 lexfile_parser.py[line:92] DEBUG pattern: _Complex	action: ['printf("COMPLEX");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 44
-48 lexfile_parser.py[line:85] DEBUG add action, at line 45
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 46
-48 lexfile_parser.py[line:92] DEBUG pattern: const	action: ['printf("CONST");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 47
-48 lexfile_parser.py[line:85] DEBUG add action, at line 48
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 49
-48 lexfile_parser.py[line:92] DEBUG pattern: continue	action: ['printf("CONTINUE");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 50
-48 lexfile_parser.py[line:85] DEBUG add action, at line 51
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 52
-48 lexfile_parser.py[line:92] DEBUG pattern: default	action: ['printf("DEFAULT");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 53
-48 lexfile_parser.py[line:85] DEBUG add action, at line 54
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 55
-48 lexfile_parser.py[line:92] DEBUG pattern: do	action: ['printf("DO");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 56
-48 lexfile_parser.py[line:85] DEBUG add action, at line 57
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 58
-48 lexfile_parser.py[line:92] DEBUG pattern: double	action: ['printf("DOUBLE");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 59
-48 lexfile_parser.py[line:85] DEBUG add action, at line 60
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 61
-48 lexfile_parser.py[line:92] DEBUG pattern: else	action: ['printf("ELSE");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 62
-48 lexfile_parser.py[line:85] DEBUG add action, at line 63
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 64
-48 lexfile_parser.py[line:92] DEBUG pattern: enum	action: ['printf("ENUM");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 65
-48 lexfile_parser.py[line:85] DEBUG add action, at line 66
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 67
-48 lexfile_parser.py[line:92] DEBUG pattern: extern	action: ['printf("EXTERN");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 68
-48 lexfile_parser.py[line:85] DEBUG add action, at line 69
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 70
-48 lexfile_parser.py[line:92] DEBUG pattern: float	action: ['printf("FLOAT");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 71
-48 lexfile_parser.py[line:85] DEBUG add action, at line 72
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 73
-48 lexfile_parser.py[line:92] DEBUG pattern: for	action: ['printf("FOR");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 74
-48 lexfile_parser.py[line:85] DEBUG add action, at line 75
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 76
-48 lexfile_parser.py[line:92] DEBUG pattern: goto	action: ['printf("GOTO");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 77
-48 lexfile_parser.py[line:85] DEBUG add action, at line 78
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 79
-48 lexfile_parser.py[line:92] DEBUG pattern: if	action: ['printf("IF");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 80
-48 lexfile_parser.py[line:85] DEBUG add action, at line 81
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 82
-48 lexfile_parser.py[line:92] DEBUG pattern: _Imaginary	action: ['printf("IMAGINARY");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 83
-48 lexfile_parser.py[line:85] DEBUG add action, at line 84
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 85
-48 lexfile_parser.py[line:92] DEBUG pattern: inline	action: ['printf("INLINE");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 86
-48 lexfile_parser.py[line:85] DEBUG add action, at line 87
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 88
-48 lexfile_parser.py[line:92] DEBUG pattern: int	action: ['printf("INT");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 89
-48 lexfile_parser.py[line:85] DEBUG add action, at line 90
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 91
-48 lexfile_parser.py[line:92] DEBUG pattern: long	action: ['printf("LONG");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 92
-48 lexfile_parser.py[line:85] DEBUG add action, at line 93
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 94
-48 lexfile_parser.py[line:92] DEBUG pattern: register	action: ['printf("REGISTER");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 95
-48 lexfile_parser.py[line:85] DEBUG add action, at line 96
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 97
-48 lexfile_parser.py[line:92] DEBUG pattern: restrict	action: ['printf("RESTRICT");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 98
-48 lexfile_parser.py[line:85] DEBUG add action, at line 99
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 100
-48 lexfile_parser.py[line:92] DEBUG pattern: return	action: ['printf("RETURN");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 101
-48 lexfile_parser.py[line:85] DEBUG add action, at line 102
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 103
-48 lexfile_parser.py[line:92] DEBUG pattern: short	action: ['printf("SHORT");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 104
-48 lexfile_parser.py[line:85] DEBUG add action, at line 105
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 106
-48 lexfile_parser.py[line:92] DEBUG pattern: signed	action: ['printf("SIGNED");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 107
-48 lexfile_parser.py[line:85] DEBUG add action, at line 108
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 109
-48 lexfile_parser.py[line:92] DEBUG pattern: sizeof	action: ['printf("SIZEOF");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 110
-48 lexfile_parser.py[line:85] DEBUG add action, at line 111
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 112
-48 lexfile_parser.py[line:92] DEBUG pattern: static	action: ['printf("STATIC");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 113
-48 lexfile_parser.py[line:85] DEBUG add action, at line 114
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 115
-48 lexfile_parser.py[line:92] DEBUG pattern: struct	action: ['printf("STRUCT");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 116
-48 lexfile_parser.py[line:85] DEBUG add action, at line 117
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 118
-48 lexfile_parser.py[line:92] DEBUG pattern: switch	action: ['printf("SWITCH");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 119
-48 lexfile_parser.py[line:85] DEBUG add action, at line 120
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 121
-48 lexfile_parser.py[line:92] DEBUG pattern: typedef	action: ['printf("TYPEDEF");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 122
-48 lexfile_parser.py[line:85] DEBUG add action, at line 123
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 124
-48 lexfile_parser.py[line:92] DEBUG pattern: union	action: ['printf("UNION");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 125
-48 lexfile_parser.py[line:85] DEBUG add action, at line 126
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 127
-48 lexfile_parser.py[line:92] DEBUG pattern: unsigned	action: ['printf("UNSIGNED");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 128
-48 lexfile_parser.py[line:85] DEBUG add action, at line 129
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 130
-48 lexfile_parser.py[line:92] DEBUG pattern: void	action: ['printf("VOID");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 131
-48 lexfile_parser.py[line:85] DEBUG add action, at line 132
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 133
-48 lexfile_parser.py[line:92] DEBUG pattern: volatile	action: ['printf("VOLATILE");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 134
-48 lexfile_parser.py[line:85] DEBUG add action, at line 135
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 136
-48 lexfile_parser.py[line:92] DEBUG pattern: while	action: ['printf("WHILE");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 138
-48 lexfile_parser.py[line:85] DEBUG add action, at line 139
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 140
-48 lexfile_parser.py[line:92] DEBUG pattern: {L}({L}|{D})*	action: ['printf("IDENTIFIER");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 142
-48 lexfile_parser.py[line:85] DEBUG add action, at line 143
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 144
-48 lexfile_parser.py[line:92] DEBUG pattern: 0[xX]{H}+{IS}?	action: ['printf("CONSTANT");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 145
-48 lexfile_parser.py[line:85] DEBUG add action, at line 146
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 147
-48 lexfile_parser.py[line:92] DEBUG pattern: 0[0-7]*{IS}?	action: ['printf("CONSTANT");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 148
-48 lexfile_parser.py[line:85] DEBUG add action, at line 149
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 150
-48 lexfile_parser.py[line:92] DEBUG pattern: 1-9]{D}*{IS}	action: ['printf("CONSTANT");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 151
-48 lexfile_parser.py[line:85] DEBUG add action, at line 152
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 153
-48 lexfile_parser.py[line:92] DEBUG pattern: L?'(\\.|[^\\'\n])+'	action: ['printf("CONSTANT");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 155
-48 lexfile_parser.py[line:85] DEBUG add action, at line 156
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 157
-48 lexfile_parser.py[line:92] DEBUG pattern: {D}+{E}{FS}?	action: ['printf("CONSTANT");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 158
-48 lexfile_parser.py[line:85] DEBUG add action, at line 159
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 160
-48 lexfile_parser.py[line:92] DEBUG pattern: {D}*"."{D}+{E}?{FS}?	action: ['printf("CONSTANT");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 161
-48 lexfile_parser.py[line:85] DEBUG add action, at line 162
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 163
-48 lexfile_parser.py[line:92] DEBUG pattern: {D}+"."{D}*{E}?{FS}?	action: ['printf("CONSTANT");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 164
-48 lexfile_parser.py[line:85] DEBUG add action, at line 165
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 166
-48 lexfile_parser.py[line:92] DEBUG pattern: 0[xX]{H}+{P}{FS}?	action: ['printf("CONSTANT");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 167
-48 lexfile_parser.py[line:85] DEBUG add action, at line 168
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 169
-48 lexfile_parser.py[line:92] DEBUG pattern: 0[xX]{H}*"."{H}+{P}{FS}?	action: ['printf("CONSTANT");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 170
-48 lexfile_parser.py[line:85] DEBUG add action, at line 171
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 172
-48 lexfile_parser.py[line:92] DEBUG pattern: 0[xX]{H}+"."{H}*{P}{FS}?	action: ['printf("CONSTANT");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 174
-48 lexfile_parser.py[line:85] DEBUG add action, at line 175
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 176
-48 lexfile_parser.py[line:92] DEBUG pattern: L?\"(\\.|[^\\"\n])*\"	action: ['printf("STRING_LITERAL");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 178
-48 lexfile_parser.py[line:85] DEBUG add action, at line 179
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 180
-48 lexfile_parser.py[line:92] DEBUG pattern: ...	action: ['printf("ELLIPSIS");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 181
-48 lexfile_parser.py[line:85] DEBUG add action, at line 182
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 183
-48 lexfile_parser.py[line:92] DEBUG pattern: >>=	action: ['printf("RIGHT_ASSIGN");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 184
-48 lexfile_parser.py[line:85] DEBUG add action, at line 185
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 186
-48 lexfile_parser.py[line:92] DEBUG pattern: <<=	action: ['printf("LEFT_ASSIGN");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 187
-48 lexfile_parser.py[line:85] DEBUG add action, at line 188
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 189
-48 lexfile_parser.py[line:92] DEBUG pattern: +=	action: ['printf("ADD_ASSIGN");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 190
-48 lexfile_parser.py[line:85] DEBUG add action, at line 191
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 192
-48 lexfile_parser.py[line:92] DEBUG pattern: -=	action: ['printf("SUB_ASSIGN");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 193
-48 lexfile_parser.py[line:85] DEBUG add action, at line 194
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 195
-48 lexfile_parser.py[line:92] DEBUG pattern: *=	action: ['printf("MUL_ASSIGN");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 196
-48 lexfile_parser.py[line:85] DEBUG add action, at line 197
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 198
-48 lexfile_parser.py[line:92] DEBUG pattern: /=	action: ['printf("DIV_ASSIGN");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 199
-48 lexfile_parser.py[line:85] DEBUG add action, at line 200
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 201
-48 lexfile_parser.py[line:92] DEBUG pattern: %=	action: ['printf("MOD_ASSIGN");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 202
-48 lexfile_parser.py[line:85] DEBUG add action, at line 203
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 204
-48 lexfile_parser.py[line:92] DEBUG pattern: &=	action: ['printf("AND_ASSIGN");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 205
-48 lexfile_parser.py[line:85] DEBUG add action, at line 206
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 207
-48 lexfile_parser.py[line:92] DEBUG pattern: ^=	action: ['printf("XOR_ASSIGN");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 208
-48 lexfile_parser.py[line:85] DEBUG add action, at line 209
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 210
-48 lexfile_parser.py[line:92] DEBUG pattern: |=	action: ['printf("OR_ASSIGN");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 211
-48 lexfile_parser.py[line:85] DEBUG add action, at line 212
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 213
-48 lexfile_parser.py[line:92] DEBUG pattern: >>	action: ['printf("RIGHT_OP");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 214
-48 lexfile_parser.py[line:85] DEBUG add action, at line 215
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 216
-48 lexfile_parser.py[line:92] DEBUG pattern: <<	action: ['printf("LEFT_OP");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 217
-48 lexfile_parser.py[line:85] DEBUG add action, at line 218
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 219
-48 lexfile_parser.py[line:92] DEBUG pattern: ++	action: ['printf("INC_OP");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 220
-48 lexfile_parser.py[line:85] DEBUG add action, at line 221
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 222
-48 lexfile_parser.py[line:92] DEBUG pattern: --	action: ['printf("DEC_OP");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 223
-48 lexfile_parser.py[line:85] DEBUG add action, at line 224
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 225
-48 lexfile_parser.py[line:92] DEBUG pattern: ->	action: ['printf("PTR_OP");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 226
-48 lexfile_parser.py[line:85] DEBUG add action, at line 227
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 228
-48 lexfile_parser.py[line:92] DEBUG pattern: &&	action: ['printf("AND_OP");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 229
-48 lexfile_parser.py[line:85] DEBUG add action, at line 230
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 231
-48 lexfile_parser.py[line:92] DEBUG pattern: ||	action: ['printf("OR_OP");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 232
-48 lexfile_parser.py[line:85] DEBUG add action, at line 233
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 234
-48 lexfile_parser.py[line:92] DEBUG pattern: <=	action: ['printf("LE_OP");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 235
-48 lexfile_parser.py[line:85] DEBUG add action, at line 236
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 237
-48 lexfile_parser.py[line:92] DEBUG pattern: >=	action: ['printf("GE_OP");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 238
-48 lexfile_parser.py[line:85] DEBUG add action, at line 239
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 240
-48 lexfile_parser.py[line:92] DEBUG pattern: ==	action: ['printf("EQ_OP");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 241
-48 lexfile_parser.py[line:85] DEBUG add action, at line 242
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 243
-48 lexfile_parser.py[line:92] DEBUG pattern: !=	action: ['printf("NE_OP");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 244
-48 lexfile_parser.py[line:85] DEBUG add action, at line 245
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 246
-48 lexfile_parser.py[line:92] DEBUG pattern: ;	action: ['printf(";");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 247
-48 lexfile_parser.py[line:85] DEBUG add action, at line 248
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 249
-48 lexfile_parser.py[line:92] DEBUG pattern: ("{"|"<%")	action: ['printf("{");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 250
-48 lexfile_parser.py[line:85] DEBUG add action, at line 251
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 252
-48 lexfile_parser.py[line:92] DEBUG pattern: ("}"|"%>")	action: ['printf("}");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 253
-48 lexfile_parser.py[line:85] DEBUG add action, at line 254
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 255
-48 lexfile_parser.py[line:92] DEBUG pattern: ,	action: ['printf(",");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 256
-48 lexfile_parser.py[line:85] DEBUG add action, at line 257
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 258
-48 lexfile_parser.py[line:92] DEBUG pattern: :	action: ['printf(":");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 259
-48 lexfile_parser.py[line:85] DEBUG add action, at line 260
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 261
-48 lexfile_parser.py[line:92] DEBUG pattern: =	action: ['printf("=");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 262
-48 lexfile_parser.py[line:85] DEBUG add action, at line 263
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 264
-48 lexfile_parser.py[line:92] DEBUG pattern: (	action: ['printf("(");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 265
-48 lexfile_parser.py[line:85] DEBUG add action, at line 266
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 267
-48 lexfile_parser.py[line:92] DEBUG pattern: )	action: ['printf(")");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 268
-48 lexfile_parser.py[line:85] DEBUG add action, at line 269
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 270
-48 lexfile_parser.py[line:92] DEBUG pattern: ("["|"<:")	action: ['printf("[");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 271
-48 lexfile_parser.py[line:85] DEBUG add action, at line 272
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 273
-48 lexfile_parser.py[line:92] DEBUG pattern: ("]"|":>")	action: ['printf("]");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 274
-48 lexfile_parser.py[line:85] DEBUG add action, at line 275
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 276
-48 lexfile_parser.py[line:92] DEBUG pattern: .	action: ['printf(".");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 277
-48 lexfile_parser.py[line:85] DEBUG add action, at line 278
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 279
-48 lexfile_parser.py[line:92] DEBUG pattern: &	action: ['printf("&");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 280
-48 lexfile_parser.py[line:85] DEBUG add action, at line 281
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 282
-48 lexfile_parser.py[line:92] DEBUG pattern: !	action: ['printf("!");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 283
-48 lexfile_parser.py[line:85] DEBUG add action, at line 284
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 285
-48 lexfile_parser.py[line:92] DEBUG pattern: ~	action: ['printf("~");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 286
-48 lexfile_parser.py[line:85] DEBUG add action, at line 287
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 288
-48 lexfile_parser.py[line:92] DEBUG pattern: -	action: ['printf("-");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 289
-48 lexfile_parser.py[line:85] DEBUG add action, at line 290
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 291
-48 lexfile_parser.py[line:92] DEBUG pattern: +	action: ['printf("+");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 292
-48 lexfile_parser.py[line:85] DEBUG add action, at line 293
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 294
-48 lexfile_parser.py[line:92] DEBUG pattern: *	action: ['printf("*");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 295
-48 lexfile_parser.py[line:85] DEBUG add action, at line 296
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 297
-48 lexfile_parser.py[line:92] DEBUG pattern: /	action: ['printf("/");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 298
-48 lexfile_parser.py[line:85] DEBUG add action, at line 299
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 300
-48 lexfile_parser.py[line:92] DEBUG pattern: %	action: ['printf("%");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 301
-48 lexfile_parser.py[line:85] DEBUG add action, at line 302
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 303
-48 lexfile_parser.py[line:92] DEBUG pattern: <	action: ['printf("<");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 304
-48 lexfile_parser.py[line:85] DEBUG add action, at line 305
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 306
-48 lexfile_parser.py[line:92] DEBUG pattern: >	action: ['printf(">");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 307
-48 lexfile_parser.py[line:85] DEBUG add action, at line 308
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 309
-48 lexfile_parser.py[line:92] DEBUG pattern: ^	action: ['printf("^");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 310
-48 lexfile_parser.py[line:85] DEBUG add action, at line 311
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 312
-48 lexfile_parser.py[line:92] DEBUG pattern: |	action: ['printf("||");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 313
-48 lexfile_parser.py[line:85] DEBUG add action, at line 314
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 315
-48 lexfile_parser.py[line:92] DEBUG pattern: ?	action: ['printf("?");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 317
-48 lexfile_parser.py[line:85] DEBUG add action, at line 318
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 319
-48 lexfile_parser.py[line:92] DEBUG pattern:  \t\v\n\f	action: ['printf("SPACE");']
-48 lexfile_parser.py[line:133] DEBUG Find {! at line 320
-48 lexfile_parser.py[line:85] DEBUG add action, at line 321
-48 lexfile_parser.py[line:89] DEBUG find }, and add rule, at line 322
-48 lexfile_parser.py[line:92] DEBUG pattern: .	action: ['printf("ERROR!");']
-48 lexfile_parser.py[line:76] DEBUG Part3 End, Part4 Start
-48 lexfile_parser.py[line:138] DEBUG parser end
+37 lexfile_parser.py[line:45] DEBUG Part1 Start
+37 lexfile_parser.py[line:52] DEBUG Part1 End, Part2 Start
+37 lexfile_parser.py[line:59] DEBUG Part2 End, Part3 Start
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 17
+37 lexfile_parser.py[line:82] DEBUG add action, at line 18
+37 lexfile_parser.py[line:82] DEBUG add action, at line 19
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 20
+37 lexfile_parser.py[line:89] DEBUG pattern: "/*"	action: ['comment();', 'printf("MULTI_LINE_COMMENT");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 21
+37 lexfile_parser.py[line:82] DEBUG add action, at line 22
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 23
+37 lexfile_parser.py[line:89] DEBUG pattern: "//"[^\n]*	action: ['printf("SINGLE_LINE_COMMENT");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 26
+37 lexfile_parser.py[line:82] DEBUG add action, at line 27
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 28
+37 lexfile_parser.py[line:89] DEBUG pattern: "auto"	action: ['printf("AUTO");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 29
+37 lexfile_parser.py[line:82] DEBUG add action, at line 30
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 31
+37 lexfile_parser.py[line:89] DEBUG pattern: "_Bool"	action: ['printf("BOOL");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 32
+37 lexfile_parser.py[line:82] DEBUG add action, at line 33
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 34
+37 lexfile_parser.py[line:89] DEBUG pattern: "break"	action: ['printf("BREAK");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 35
+37 lexfile_parser.py[line:82] DEBUG add action, at line 36
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 37
+37 lexfile_parser.py[line:89] DEBUG pattern: "case"	action: ['printf("CASE");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 38
+37 lexfile_parser.py[line:82] DEBUG add action, at line 39
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 40
+37 lexfile_parser.py[line:89] DEBUG pattern: "char"	action: ['printf("CHAR");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 41
+37 lexfile_parser.py[line:82] DEBUG add action, at line 42
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 43
+37 lexfile_parser.py[line:89] DEBUG pattern: "_Complex"	action: ['printf("COMPLEX");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 44
+37 lexfile_parser.py[line:82] DEBUG add action, at line 45
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 46
+37 lexfile_parser.py[line:89] DEBUG pattern: "const"	action: ['printf("CONST");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 47
+37 lexfile_parser.py[line:82] DEBUG add action, at line 48
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 49
+37 lexfile_parser.py[line:89] DEBUG pattern: "continue"	action: ['printf("CONTINUE");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 50
+37 lexfile_parser.py[line:82] DEBUG add action, at line 51
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 52
+37 lexfile_parser.py[line:89] DEBUG pattern: "default"	action: ['printf("DEFAULT");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 53
+37 lexfile_parser.py[line:82] DEBUG add action, at line 54
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 55
+37 lexfile_parser.py[line:89] DEBUG pattern: "do"	action: ['printf("DO");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 56
+37 lexfile_parser.py[line:82] DEBUG add action, at line 57
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 58
+37 lexfile_parser.py[line:89] DEBUG pattern: "double"	action: ['printf("DOUBLE");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 59
+37 lexfile_parser.py[line:82] DEBUG add action, at line 60
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 61
+37 lexfile_parser.py[line:89] DEBUG pattern: "else"	action: ['printf("ELSE");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 62
+37 lexfile_parser.py[line:82] DEBUG add action, at line 63
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 64
+37 lexfile_parser.py[line:89] DEBUG pattern: "enum"	action: ['printf("ENUM");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 65
+37 lexfile_parser.py[line:82] DEBUG add action, at line 66
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 67
+37 lexfile_parser.py[line:89] DEBUG pattern: "extern"	action: ['printf("EXTERN");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 68
+37 lexfile_parser.py[line:82] DEBUG add action, at line 69
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 70
+37 lexfile_parser.py[line:89] DEBUG pattern: "float"	action: ['printf("FLOAT");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 71
+37 lexfile_parser.py[line:82] DEBUG add action, at line 72
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 73
+37 lexfile_parser.py[line:89] DEBUG pattern: "for"	action: ['printf("FOR");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 74
+37 lexfile_parser.py[line:82] DEBUG add action, at line 75
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 76
+37 lexfile_parser.py[line:89] DEBUG pattern: "goto"	action: ['printf("GOTO");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 77
+37 lexfile_parser.py[line:82] DEBUG add action, at line 78
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 79
+37 lexfile_parser.py[line:89] DEBUG pattern: "if"	action: ['printf("IF");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 80
+37 lexfile_parser.py[line:82] DEBUG add action, at line 81
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 82
+37 lexfile_parser.py[line:89] DEBUG pattern: "_Imaginary"	action: ['printf("IMAGINARY");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 83
+37 lexfile_parser.py[line:82] DEBUG add action, at line 84
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 85
+37 lexfile_parser.py[line:89] DEBUG pattern: "inline"	action: ['printf("INLINE");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 86
+37 lexfile_parser.py[line:82] DEBUG add action, at line 87
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 88
+37 lexfile_parser.py[line:89] DEBUG pattern: "int"	action: ['printf("INT");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 89
+37 lexfile_parser.py[line:82] DEBUG add action, at line 90
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 91
+37 lexfile_parser.py[line:89] DEBUG pattern: "long"	action: ['printf("LONG");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 92
+37 lexfile_parser.py[line:82] DEBUG add action, at line 93
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 94
+37 lexfile_parser.py[line:89] DEBUG pattern: "register"	action: ['printf("REGISTER");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 95
+37 lexfile_parser.py[line:82] DEBUG add action, at line 96
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 97
+37 lexfile_parser.py[line:89] DEBUG pattern: "restrict"	action: ['printf("RESTRICT");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 98
+37 lexfile_parser.py[line:82] DEBUG add action, at line 99
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 100
+37 lexfile_parser.py[line:89] DEBUG pattern: "return"	action: ['printf("RETURN");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 101
+37 lexfile_parser.py[line:82] DEBUG add action, at line 102
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 103
+37 lexfile_parser.py[line:89] DEBUG pattern: "short"	action: ['printf("SHORT");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 104
+37 lexfile_parser.py[line:82] DEBUG add action, at line 105
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 106
+37 lexfile_parser.py[line:89] DEBUG pattern: "signed"	action: ['printf("SIGNED");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 107
+37 lexfile_parser.py[line:82] DEBUG add action, at line 108
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 109
+37 lexfile_parser.py[line:89] DEBUG pattern: "sizeof"	action: ['printf("SIZEOF");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 110
+37 lexfile_parser.py[line:82] DEBUG add action, at line 111
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 112
+37 lexfile_parser.py[line:89] DEBUG pattern: "static"	action: ['printf("STATIC");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 113
+37 lexfile_parser.py[line:82] DEBUG add action, at line 114
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 115
+37 lexfile_parser.py[line:89] DEBUG pattern: "struct"	action: ['printf("STRUCT");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 116
+37 lexfile_parser.py[line:82] DEBUG add action, at line 117
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 118
+37 lexfile_parser.py[line:89] DEBUG pattern: "switch"	action: ['printf("SWITCH");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 119
+37 lexfile_parser.py[line:82] DEBUG add action, at line 120
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 121
+37 lexfile_parser.py[line:89] DEBUG pattern: "typedef"	action: ['printf("TYPEDEF");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 122
+37 lexfile_parser.py[line:82] DEBUG add action, at line 123
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 124
+37 lexfile_parser.py[line:89] DEBUG pattern: "union"	action: ['printf("UNION");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 125
+37 lexfile_parser.py[line:82] DEBUG add action, at line 126
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 127
+37 lexfile_parser.py[line:89] DEBUG pattern: "unsigned"	action: ['printf("UNSIGNED");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 128
+37 lexfile_parser.py[line:82] DEBUG add action, at line 129
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 130
+37 lexfile_parser.py[line:89] DEBUG pattern: "void"	action: ['printf("VOID");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 131
+37 lexfile_parser.py[line:82] DEBUG add action, at line 132
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 133
+37 lexfile_parser.py[line:89] DEBUG pattern: "volatile"	action: ['printf("VOLATILE");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 134
+37 lexfile_parser.py[line:82] DEBUG add action, at line 135
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 136
+37 lexfile_parser.py[line:89] DEBUG pattern: "while"	action: ['printf("WHILE");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 138
+37 lexfile_parser.py[line:82] DEBUG add action, at line 139
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 140
+37 lexfile_parser.py[line:89] DEBUG pattern: {L}({L}|{D})*	action: ['printf("IDENTIFIER");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 142
+37 lexfile_parser.py[line:82] DEBUG add action, at line 143
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 144
+37 lexfile_parser.py[line:89] DEBUG pattern: 0[xX]{H}+{IS}?	action: ['printf("CONSTANT");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 145
+37 lexfile_parser.py[line:82] DEBUG add action, at line 146
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 147
+37 lexfile_parser.py[line:89] DEBUG pattern: 0[0-7]*{IS}?	action: ['printf("CONSTANT");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 148
+37 lexfile_parser.py[line:82] DEBUG add action, at line 149
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 150
+37 lexfile_parser.py[line:89] DEBUG pattern: [1-9]{D}*{IS}?	action: ['printf("CONSTANT");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 151
+37 lexfile_parser.py[line:82] DEBUG add action, at line 152
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 153
+37 lexfile_parser.py[line:89] DEBUG pattern: L?'(\\.|[^\\'\n])+'	action: ['printf("CONSTANT");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 155
+37 lexfile_parser.py[line:82] DEBUG add action, at line 156
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 157
+37 lexfile_parser.py[line:89] DEBUG pattern: {D}+{E}{FS}?	action: ['printf("CONSTANT");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 158
+37 lexfile_parser.py[line:82] DEBUG add action, at line 159
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 160
+37 lexfile_parser.py[line:89] DEBUG pattern: {D}*"."{D}+{E}?{FS}?	action: ['printf("CONSTANT");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 161
+37 lexfile_parser.py[line:82] DEBUG add action, at line 162
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 163
+37 lexfile_parser.py[line:89] DEBUG pattern: {D}+"."{D}*{E}?{FS}?	action: ['printf("CONSTANT");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 164
+37 lexfile_parser.py[line:82] DEBUG add action, at line 165
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 166
+37 lexfile_parser.py[line:89] DEBUG pattern: 0[xX]{H}+{P}{FS}?	action: ['printf("CONSTANT");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 167
+37 lexfile_parser.py[line:82] DEBUG add action, at line 168
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 169
+37 lexfile_parser.py[line:89] DEBUG pattern: 0[xX]{H}*"."{H}+{P}{FS}?	action: ['printf("CONSTANT");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 170
+37 lexfile_parser.py[line:82] DEBUG add action, at line 171
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 172
+37 lexfile_parser.py[line:89] DEBUG pattern: 0[xX]{H}+"."{H}*{P}{FS}?	action: ['printf("CONSTANT");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 174
+37 lexfile_parser.py[line:82] DEBUG add action, at line 175
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 176
+37 lexfile_parser.py[line:89] DEBUG pattern: L?\"(\\.|[^\\"\n])*\"	action: ['printf("STRING_LITERAL");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 178
+37 lexfile_parser.py[line:82] DEBUG add action, at line 179
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 180
+37 lexfile_parser.py[line:89] DEBUG pattern: "..."	action: ['printf("ELLIPSIS");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 181
+37 lexfile_parser.py[line:82] DEBUG add action, at line 182
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 183
+37 lexfile_parser.py[line:89] DEBUG pattern: ">>="	action: ['printf("RIGHT_ASSIGN");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 184
+37 lexfile_parser.py[line:82] DEBUG add action, at line 185
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 186
+37 lexfile_parser.py[line:89] DEBUG pattern: "<<="	action: ['printf("LEFT_ASSIGN");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 187
+37 lexfile_parser.py[line:82] DEBUG add action, at line 188
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 189
+37 lexfile_parser.py[line:89] DEBUG pattern: "+="	action: ['printf("ADD_ASSIGN");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 190
+37 lexfile_parser.py[line:82] DEBUG add action, at line 191
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 192
+37 lexfile_parser.py[line:89] DEBUG pattern: "-="	action: ['printf("SUB_ASSIGN");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 193
+37 lexfile_parser.py[line:82] DEBUG add action, at line 194
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 195
+37 lexfile_parser.py[line:89] DEBUG pattern: "*="	action: ['printf("MUL_ASSIGN");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 196
+37 lexfile_parser.py[line:82] DEBUG add action, at line 197
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 198
+37 lexfile_parser.py[line:89] DEBUG pattern: "/="	action: ['printf("DIV_ASSIGN");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 199
+37 lexfile_parser.py[line:82] DEBUG add action, at line 200
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 201
+37 lexfile_parser.py[line:89] DEBUG pattern: "%="	action: ['printf("MOD_ASSIGN");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 202
+37 lexfile_parser.py[line:82] DEBUG add action, at line 203
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 204
+37 lexfile_parser.py[line:89] DEBUG pattern: "&="	action: ['printf("AND_ASSIGN");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 205
+37 lexfile_parser.py[line:82] DEBUG add action, at line 206
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 207
+37 lexfile_parser.py[line:89] DEBUG pattern: "^="	action: ['printf("XOR_ASSIGN");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 208
+37 lexfile_parser.py[line:82] DEBUG add action, at line 209
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 210
+37 lexfile_parser.py[line:89] DEBUG pattern: "|="	action: ['printf("OR_ASSIGN");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 211
+37 lexfile_parser.py[line:82] DEBUG add action, at line 212
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 213
+37 lexfile_parser.py[line:89] DEBUG pattern: ">>"	action: ['printf("RIGHT_OP");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 214
+37 lexfile_parser.py[line:82] DEBUG add action, at line 215
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 216
+37 lexfile_parser.py[line:89] DEBUG pattern: "<<"	action: ['printf("LEFT_OP");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 217
+37 lexfile_parser.py[line:82] DEBUG add action, at line 218
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 219
+37 lexfile_parser.py[line:89] DEBUG pattern: "++"	action: ['printf("INC_OP");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 220
+37 lexfile_parser.py[line:82] DEBUG add action, at line 221
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 222
+37 lexfile_parser.py[line:89] DEBUG pattern: "--"	action: ['printf("DEC_OP");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 223
+37 lexfile_parser.py[line:82] DEBUG add action, at line 224
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 225
+37 lexfile_parser.py[line:89] DEBUG pattern: "->"	action: ['printf("PTR_OP");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 226
+37 lexfile_parser.py[line:82] DEBUG add action, at line 227
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 228
+37 lexfile_parser.py[line:89] DEBUG pattern: "&&"	action: ['printf("AND_OP");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 229
+37 lexfile_parser.py[line:82] DEBUG add action, at line 230
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 231
+37 lexfile_parser.py[line:89] DEBUG pattern: "||"	action: ['printf("OR_OP");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 232
+37 lexfile_parser.py[line:82] DEBUG add action, at line 233
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 234
+37 lexfile_parser.py[line:89] DEBUG pattern: "<="	action: ['printf("LE_OP");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 235
+37 lexfile_parser.py[line:82] DEBUG add action, at line 236
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 237
+37 lexfile_parser.py[line:89] DEBUG pattern: ">="	action: ['printf("GE_OP");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 238
+37 lexfile_parser.py[line:82] DEBUG add action, at line 239
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 240
+37 lexfile_parser.py[line:89] DEBUG pattern: "=="	action: ['printf("EQ_OP");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 241
+37 lexfile_parser.py[line:82] DEBUG add action, at line 242
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 243
+37 lexfile_parser.py[line:89] DEBUG pattern: "!="	action: ['printf("NE_OP");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 244
+37 lexfile_parser.py[line:82] DEBUG add action, at line 245
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 246
+37 lexfile_parser.py[line:89] DEBUG pattern: ";"	action: ['printf(";");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 247
+37 lexfile_parser.py[line:82] DEBUG add action, at line 248
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 249
+37 lexfile_parser.py[line:89] DEBUG pattern: ("{"|"<%")	action: ['printf("{");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 250
+37 lexfile_parser.py[line:82] DEBUG add action, at line 251
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 252
+37 lexfile_parser.py[line:89] DEBUG pattern: ("}"|"%>")	action: ['printf("}");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 253
+37 lexfile_parser.py[line:82] DEBUG add action, at line 254
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 255
+37 lexfile_parser.py[line:89] DEBUG pattern: ","	action: ['printf(",");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 256
+37 lexfile_parser.py[line:82] DEBUG add action, at line 257
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 258
+37 lexfile_parser.py[line:89] DEBUG pattern: ":"	action: ['printf(":");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 259
+37 lexfile_parser.py[line:82] DEBUG add action, at line 260
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 261
+37 lexfile_parser.py[line:89] DEBUG pattern: "="	action: ['printf("=");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 262
+37 lexfile_parser.py[line:82] DEBUG add action, at line 263
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 264
+37 lexfile_parser.py[line:89] DEBUG pattern: "("	action: ['printf("(");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 265
+37 lexfile_parser.py[line:82] DEBUG add action, at line 266
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 267
+37 lexfile_parser.py[line:89] DEBUG pattern: ")"	action: ['printf(")");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 268
+37 lexfile_parser.py[line:82] DEBUG add action, at line 269
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 270
+37 lexfile_parser.py[line:89] DEBUG pattern: ("["|"<:")	action: ['printf("[");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 271
+37 lexfile_parser.py[line:82] DEBUG add action, at line 272
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 273
+37 lexfile_parser.py[line:89] DEBUG pattern: ("]"|":>")	action: ['printf("]");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 274
+37 lexfile_parser.py[line:82] DEBUG add action, at line 275
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 276
+37 lexfile_parser.py[line:89] DEBUG pattern: "."	action: ['printf(".");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 277
+37 lexfile_parser.py[line:82] DEBUG add action, at line 278
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 279
+37 lexfile_parser.py[line:89] DEBUG pattern: "&"	action: ['printf("&");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 280
+37 lexfile_parser.py[line:82] DEBUG add action, at line 281
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 282
+37 lexfile_parser.py[line:89] DEBUG pattern: "!"	action: ['printf("!");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 283
+37 lexfile_parser.py[line:82] DEBUG add action, at line 284
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 285
+37 lexfile_parser.py[line:89] DEBUG pattern: "~"	action: ['printf("~");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 286
+37 lexfile_parser.py[line:82] DEBUG add action, at line 287
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 288
+37 lexfile_parser.py[line:89] DEBUG pattern: "-"	action: ['printf("-");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 289
+37 lexfile_parser.py[line:82] DEBUG add action, at line 290
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 291
+37 lexfile_parser.py[line:89] DEBUG pattern: "+"	action: ['printf("+");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 292
+37 lexfile_parser.py[line:82] DEBUG add action, at line 293
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 294
+37 lexfile_parser.py[line:89] DEBUG pattern: "*"	action: ['printf("*");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 295
+37 lexfile_parser.py[line:82] DEBUG add action, at line 296
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 297
+37 lexfile_parser.py[line:89] DEBUG pattern: "/"	action: ['printf("/");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 298
+37 lexfile_parser.py[line:82] DEBUG add action, at line 299
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 300
+37 lexfile_parser.py[line:89] DEBUG pattern: "%"	action: ['printf("%");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 301
+37 lexfile_parser.py[line:82] DEBUG add action, at line 302
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 303
+37 lexfile_parser.py[line:89] DEBUG pattern: "<"	action: ['printf("<");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 304
+37 lexfile_parser.py[line:82] DEBUG add action, at line 305
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 306
+37 lexfile_parser.py[line:89] DEBUG pattern: ">"	action: ['printf(">");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 307
+37 lexfile_parser.py[line:82] DEBUG add action, at line 308
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 309
+37 lexfile_parser.py[line:89] DEBUG pattern: "^"	action: ['printf("^");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 310
+37 lexfile_parser.py[line:82] DEBUG add action, at line 311
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 312
+37 lexfile_parser.py[line:89] DEBUG pattern: "|"	action: ['printf("||");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 313
+37 lexfile_parser.py[line:82] DEBUG add action, at line 314
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 315
+37 lexfile_parser.py[line:89] DEBUG pattern: "?"	action: ['printf("?");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 317
+37 lexfile_parser.py[line:82] DEBUG add action, at line 318
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 319
+37 lexfile_parser.py[line:89] DEBUG pattern: [ \t\v\n\f]	action: ['printf("SPACE");']
+37 lexfile_parser.py[line:130] DEBUG Find {! at line 320
+37 lexfile_parser.py[line:82] DEBUG add action, at line 321
+37 lexfile_parser.py[line:86] DEBUG find }, and add rule, at line 322
+37 lexfile_parser.py[line:89] DEBUG pattern: .	action: ['printf("ERROR!");']
+37 lexfile_parser.py[line:73] DEBUG Part3 End, Part4 Start
+37 lexfile_parser.py[line:135] DEBUG parser end

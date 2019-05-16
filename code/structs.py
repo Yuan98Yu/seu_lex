@@ -74,3 +74,9 @@ class LexfileState(IntEnum):
     Part2 = 2
     Part3 = 3
     Part4 = 4
+
+@unique
+class Mode(IntEnum):
+    """枚举类型：CCode_generator的生成模式"""
+    LEX_TEST = 0
+    YACC_TEST = 1

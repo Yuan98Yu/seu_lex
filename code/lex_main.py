@@ -1,6 +1,10 @@
 # coding:utf-8
-from .lexfile_parser import LexFileParser
+from lexfile_parser import LexFileParser
+from reparser.re_parser import RE_parser
+from C_Code_generator import CCodeGenerator
 from argparse import ArgumentParser
+from structs import Mode
+from tools import *
 
 arg_parse = ArgumentParser(prog="lex writen by Yuan Yu, 2019.5.12",
                            description="""
@@ -13,17 +17,11 @@ if args.output is None:
     args.output = "output.l"
 
 if __name__ == '__main__':
-    lex_parser = LexFileParser()
-    maps, rules, p1, p4 = lex_parser.read_and_parse_lex(args.inputFile)
-    print("regular expressions".center(30, '*'))
-    for item in maps.items():
-        print(item)
-    print("rules".center(30, '*'))
-    for rule in rules:
-        print("pattern:",rule.pattern, "action:"+str(rule.action), end="\n-----\n")
-    print("part1".center(30, '*'))
-    for line in p1:
-        print(line)
-    print("part4".center(30, '*'))
-    for line in p4:
-        print(line)
+    lex_file_parser = LexFileParser()
+    re_parser = RE_parser()
+    c_code_generator = CCodeGenerator()
+
+    maps, rules, p1, p4 = lex_file_parser.read_and_parse_lex(args.inputFile)
+    print_result_of_lexfile_parser(maps, rules, p1, p4)
+    mini_dfa, arrays, endVec = RE_parser.parseRegexs(rules)
+    result = c_code_generator.generate_c_code(arrays, endVec, p1, p4, mini_dfa.startState, Mode.LEX_TEST)

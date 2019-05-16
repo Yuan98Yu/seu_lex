@@ -1,6 +1,6 @@
 # coding:utf-8
 
-from .structs import Rule, LexfileState
+from structs import Rule, LexfileState
 import logging
 import os
 
