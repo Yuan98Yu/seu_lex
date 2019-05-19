@@ -15,6 +15,7 @@ class LexFileParser:
                             datefmt='%S',
                             filename=logFilePath+"/LexFileParser.log",
                             filemode='w')
+        logging.FileHandler(logFilePath+"/LexFileParser.log", 'w')
 
     def read_and_parse_lex(self, filePath):
         with open(filePath, 'rt') as file:

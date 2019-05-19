@@ -1,4 +1,5 @@
-from ..structs import arrays, ALLSET
+from structs import ALLSET
+import logging
 
 
 class DFA2Array_parser:
@@ -13,7 +14,7 @@ class DFA2Array_parser:
         # 1.ec表：索引char的ascii码，值是对应的列数
         ec = [0 for i in range(256)]
         for i in range(set_size):
-            ec[ALLSET[i]] = i+1
+            ec[ord(ALLSET[i])] = i+1
         arrays.append((ec, 256))
 
         # 2.base表：索引是状态序列，值是行数*宽度。
@@ -27,7 +28,8 @@ class DFA2Array_parser:
         for i in range(DFA_size):
             base[dfa.states_list[i].number] = i * (set_size+1)
             for itFirst, itSecond in dfa.states_list[i].edges.items():
-                next[base[dfa.states_list[i].number] + ec[itFirst]] = itSecond
+
+                next[base[dfa.states_list[i].number] + ec[ord(itFirst)]] = itSecond
 
         arrays.append((base, DFA_size))
         arrays.append((next, size_of_next))
@@ -36,9 +38,10 @@ class DFA2Array_parser:
         accept = [0 for i in range(DFA_size)]
 
         num_of_end = 0
-        for itFirst,itSecond in dfa.endStates_dict.items():
+        for itFirst, itSecond in dfa.endStates_dict.items():
             num_of_end += 1
             accept[itFirst] = num_of_end
             endVec.append(rules[itSecond])
 
         arrays.append((accept, DFA_size))
+        return arrays, endVec

@@ -4,13 +4,13 @@ from structs import Mode
 class CCodeGenerator:
     def __print_array(self, name, size, value, file):
         array_buf = value
-        file.write("static int	%s[%d]=\n"% (name, size))
+        file.write("static int	%s[%d]=\n" % (name, size))
         file.write("\t{ 0,\n")
         for i in range(1, size):
-            file.write("%-4s"% array_buf[i])
+            file.write("%-4s" % array_buf[i])
             if i != size - 1:
                     file.write(",")
-            if i%10 == 0:
+            if i % 10 == 0:
                 file.write("\n")
         file.write("};\n")
 
@@ -23,10 +23,10 @@ class CCodeGenerator:
             file.write("#include\"stdlib.h\"\n")
     
             file.write("#include<string.h>\n")
-            file.write("#define START_STATE %d\n"% startState)
+            file.write("#define START_STATE %d\n" % startState)
             # 依次输出P1和P4
-            for str in part1:
-                file.write(str+'\n')
+            for s in part1:
+                file.write(s + '\n')
 
             file.write("char* getCharPtr(char* fileName);\n")
             file.write("int findAction(int action);\n")  # 函数声明
@@ -156,11 +156,11 @@ class CCodeGenerator:
             else:
                 file.write("\treturn result;\n")
 
-            file.write("}\n") # lex_main函数结束
+            file.write("}\n")  # lex_main函数结束
             # int findAction(int action)函数
             file.write("int findAction(int action)\n")
             file.write("{\n")
-            file.write("switch (action) \n") # 根据endVec打印switch语句
+            file.write("switch (action) \n")  # 根据endVec打印switch语句
             file.write("{\n")
             file.write("case 0:\n")
             # ...此处省略了一些东西
@@ -189,8 +189,8 @@ class CCodeGenerator:
             file.write("exit(0);\n")
             file.write("}\n")
             file.write("fseek(fp,0,SEEK_END);\n")
-            file.write("int flen = ftell(fp);\n") # 得到文件大小 
-            file.write("cp = (char *)malloc(flen + 1);\n") # 根据文件大小动态分配内存空间
+            file.write("int flen = ftell(fp);\n")  # 得到文件大小
+            file.write("cp = (char *)malloc(flen + 1);\n")  # 根据文件大小动态分配内存空间
             file.write("if (cp == NULL)\n")
             file.write("{\n")
             file.write("fclose(fp);\n")
@@ -198,12 +198,10 @@ class CCodeGenerator:
             file.write("}\n")
             file.write("rewind(fp);\n") # 定位到文件开头
             file.write("memset(cp,0,flen+1);\n")
-            file.write("fread(cp, sizeof(char), flen, fp);\n") # 一次性读取全部文件内容
+            file.write("fread(cp, sizeof(char), flen, fp);\n")  # 一次性读取全部文件内容
             file.write("cp[flen] = 0; \n") # 字符串结束标志
             file.write("return cp;\n")
             file.write("}\n")
     
-            for str in part4:
-                file.write(str+"\n")
-
-        return 0
+            for s in part4:
+                file.write(s+"\n")

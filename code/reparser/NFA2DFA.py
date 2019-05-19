@@ -1,16 +1,21 @@
-from ..structs import *
+from structs import *
+import logging, os
 
 
 class NFA2DFA_parser:
-    def __init__(self):
+    def __init__(self, log_file_path='../tmp'):
         self.num_of_NFAstates = 0
-        pass
+        if not os.path.exists(log_file_path):
+            os.makedirs(log_file_path)
+        logging.basicConfig(filename=log_file_path + '/debug_NFA2DFA.txt', filemode='w', level=logging.DEBUG)
+        logging.FileHandler(log_file_path + '/debug_NFA2DFA.txt', 'w')
 
     def __epsilon_closure(self, initStates_set, NFAstates_dict):
         stack = []
         handled_flag_list = [False] * self.num_of_NFAstates
 
         for s in initStates_set:
+            # logging.debug('s:%d' % s)
             stack.append(s)
             handled_flag_list[s] = True
         while stack:
@@ -37,15 +42,19 @@ class NFA2DFA_parser:
             actions = endStates_in_NFA[endState_number]
         return actions
 
-    def __subset_construct(self, origin_set, constructed_set, edge_char, NFAstates_dict):
+    def __subset_construct(self, origin_set, edge_char, NFAstates_dict):
         flag = False
+        constructed_set = set()
         for state_number in origin_set:
+            # logging.debug("state_number in origin_set: %d" % state_number)
             next_states = NFAstates_dict[state_number].edges[edge_char]  # edge_char边指向的states
             if len(next_states) == 0:
                 continue
-            constructed_set.update(next_states)
+            for state_number in next_states:
+                logging.debug("state_number in next_states: %d" % state_number)
+                constructed_set.add(state_number)
             flag = True
-        return flag
+        return flag, constructed_set
 
     def NFA2DFA(self, NFAin):
         DFAout = DFA()
@@ -62,15 +71,17 @@ class NFA2DFA_parser:
         DFAout.states_list.append(state)
         unexamed_DFA_states_numbers.append(state.number)
         while unexamed_DFA_states_numbers:
-            nowState_num = unexamed_DFA_states_numbers.pop(index=0)
+            nowState_num = unexamed_DFA_states_numbers.pop(0)
             for c in edgeSet:
-                tmpSet = set()
-                if self.__subset_construct(DFAout.states_list[nowState_num].identify_set, tmpSet, c, NFAin.states_dict):
+                # logging.debug("in for")
+                flag, tmpSet = self.__subset_construct(DFAout.states_list[nowState_num].identify_set, c, NFAin.states_dict)
+                if flag:
+                    logging.debug("in flag")
                     self.__epsilon_closure(tmpSet, NFAin.states_dict)
                     to_state_num = -1
                     has = False
                     for s in DFAout.states_list:
-                        if s.identity_set == tmpSet:
+                        if s.identify_set == tmpSet:
                             to_state_num = s.number
                             has = True
                             break
@@ -84,3 +95,4 @@ class NFA2DFA_parser:
                         if actions != -1:
                             DFAout.endStates_dict[new_DFAstate.number] = actions
                     DFAout.states_list[nowState_num].edges[c] = to_state_num
+        return DFAout

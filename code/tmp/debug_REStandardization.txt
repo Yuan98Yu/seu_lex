@@ -1,0 +1,123 @@
+DEBUG:root:p: [a-z]
+DEBUG:root:p1:L
+DEBUG:root:reMap[p1]:[a-z]
+DEBUG:root:handle_quote:{L}
+DEBUG:root:rule.pattern:L
+DEBUG:root:reMap:
+DEBUG:root:{'L': '[a-z]'}
+DEBUG:root:findIt:[a-z]
+DEBUG:root:replace_brace:[a-z]
+DEBUG:root:start construct_char_set, content=a-z
+DEBUG:root:start handle_escape, exp: a-z
+DEBUG:root:result exp: a-z
+DEBUG:root:it in construct_char_set: 0,	stemp[it]:a
+DEBUG:root:it in construct_char_set: 1,	stemp[it]:-
+DEBUG:root:sit:27, eit:51
+DEBUG:root:it in construct_char_set: 2,	stemp[it]:z
+DEBUG:root:result s: dwvpefjrkstqalczgxbuymoihn
+DEBUG:root:replace_square_brace:(d|w|v|p|e|f|j|r|k|s|t|q|a|l|c|z|g|x|b|u|y|m|o|i|h|n)
+DEBUG:root:replace_dot:(d|w|v|p|e|f|j|r|k|s|t|q|a|l|c|z|g|x|b|u|y|m|o|i|h|n)
+DEBUG:root:replace_question_and_add:(d|w|v|p|e|f|j|r|k|s|t|q|a|l|c|z|g|x|b|u|y|m|o|i|h|n)
+DEBUG:root:start handle_escape, exp: (d|w|v|p|e|f|j|r|k|s|t|q|a|l|c|z|g|x|b|u|y|m|o|i|h|n)
+DEBUG:root:result exp: (d|w|v|p|e|f|j|r|k|s|t|q|a|l|c|z|g|x|b|u|y|m|o|i|h|n)
+DEBUG:root:handle_escape:(d|w|v|p|e|f|j|r|k|s|t|q|a|l|c|z|g|x|b|u|y|m|o|i|h|n)
+DEBUG:root:add_dot:(d|w|v|p|e|f|j|r|k|s|t|q|a|l|c|z|g|x|b|u|y|m|o|i|h|n)
+DEBUG:root:re2suffix rule: 0
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:state_number in next_states: 0
+DEBUG:root:in flag
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for
+DEBUG:root:in for

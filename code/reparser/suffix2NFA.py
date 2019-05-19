@@ -1,4 +1,4 @@
-from ..structs import Rule, NFAstate, NFA
+from structs import Rule, NFAstate, NFA
 
 
 class Suffix2NFA_parser:
@@ -17,13 +17,13 @@ class Suffix2NFA_parser:
         endNode = NFAstate(self.number)
         self.number += 1
         # 将up、down的终态都连接到end
-        upNFA.states_dict[upNFA.endStates_dict.keys[0]].edges['@'] \
+        upNFA.states_dict[list(upNFA.endStates_dict.keys())[0]].edges['@'] \
             .add(endNode.number)
-        downNFA.states_dict[downNFA.endStates_dict.keys[0]].edges['@'] \
+        downNFA.states_dict[list(downNFA.endStates_dict.keys())[0]].edges['@'] \
             .add(endNode.number)
         # 将start 连接到up、down的初态
         startNode.edges['@'].add(upNFA.startState)
-        startNode.edges['@'].add(upNFA.startState)
+        startNode.edges['@'].add(downNFA.startState)
         # 连接关系定义好后，存入states_dict
         downNFA.states_dict[startNode.number] = startNode
         downNFA.states_dict[endNode.number] = endNode
@@ -42,17 +42,17 @@ class Suffix2NFA_parser:
         upNFA = self.NFA_stack.pop()
         # 新建两个状态
         startNode = NFAstate(self.number)
-        number += 1
+        self.number += 1
         endNode = NFAstate(self.number)
-        number += 1
+        self.number += 1
         # start与upNFA的初态连接
         startNode.edges['@'].add(upNFA.startState)
         # start与end连接
         startNode.edges['@'].add(endNode.number)
         # upNFA的终态与初态连接
-        upNFA.states_dict[upNFA.endStates_dict.keys[0]].edges['@'] \
+        upNFA.states_dict[list(upNFA.endStates_dict.keys())[0]].edges['@'] \
             .add(upNFA.startState)
-        upNFA.states_dict[upNFA.endStates_dict.keys[0]].edges['@'] \
+        upNFA.states_dict[list(upNFA.endStates_dict.keys())[0]].edges['@'] \
             .add(endNode.number)
         # 更改初态
         upNFA.startState = startNode.number
@@ -65,18 +65,16 @@ class Suffix2NFA_parser:
         self.NFA_stack.append(upNFA)
 
     def __case2(self):
+        """if now == '.'"""
         upNFA = self.NFA_stack.pop()
         downNFA = self.NFA_stack.pop()
-        startNode = NFAstate(self.number)
-        self.number += 1
-        endNode = NFAstate(self.number)
-        self.number += 1
         # downNFA的终态 与 upNFA的初态连接
-        downNFA.states_dict[downNFA.endStates_dict.keys[0]] \
+        downNFA.states_dict[list(downNFA.endStates_dict.keys())[0]] \
             .edges['@'].add(upNFA.startState)
         # 更改终态
         downNFA.endStates_dict.clear()
         downNFA.endStates_dict.update(upNFA.endStates_dict)
+        downNFA.states_dict.update(upNFA.states_dict)
         self.NFA_stack.append(downNFA)
 
     def __switch(self, now):
@@ -87,8 +85,9 @@ class Suffix2NFA_parser:
         self.NFA_stack = []
         for i in range(len(suffix_rules)):
             pattern = suffix_rules[i].pattern
+            self.tmp_action_int = -1
             it = 0
-            while it < suffix_rules:
+            while it < len(pattern):
                 now = pattern[it]
                 if self.__switch(now) is not None:
                     self.__switch(now)()
@@ -104,7 +103,7 @@ class Suffix2NFA_parser:
                     self.number += 1
                     pushNFA = NFA(startNode.number)
                     # 连接 起始状态和终止状态
-                    startNode.edges[now].add(startNode)
+                    startNode.edges[now].add(endNode.number)
                     # 存入states_dict
                     pushNFA.states_dict[startNode.number] = startNode
                     pushNFA.states_dict[endNode.number] = endNode
@@ -126,12 +125,9 @@ class Suffix2NFA_parser:
             startNode.edges['@'].add(down_NFA.startState)
             # 修改finalNFA的起始状态
             final_NFA.startState = startNode.number
-            final_NFA.states_dict['@'] = startNode
+            final_NFA.states_dict[startNode.number] = startNode
             # 添加finalNFA的终止状态
             final_NFA.endStates_dict.update(down_NFA.endStates_dict)
             # 把downNFA的状态拷贝到finalNFA中
             final_NFA.states_dict.update(down_NFA.states_dict)
         return final_NFA
-
-
-

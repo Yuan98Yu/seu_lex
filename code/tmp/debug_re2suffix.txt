@@ -1,0 +1,2 @@
+DEBUG:root:re2suffix rule: 0
+DEBUG:root:re2suffix rule: 1

@@ -3,7 +3,6 @@ from copy import copy
 from collections import defaultdict
 
 ALLSET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"#%'()*+,-./:;<=>?[\\]^{|}_ \n\t\v\f~&"
-
 ESCAPEDCHARS = {'.', '|', '*', '(', ')', '+', '?', '{', '}', '[', ']'}
 
 
@@ -58,14 +57,14 @@ class DFAstate:
 class DFA:
     """
     结构体：一个完整的DFA，其开始节点（唯一），终止节点及对应动作（不唯一），以及所有节点（DFAstate类型）"""
-    def __init__(self, startState=0, endStates_dict=None, states_dict=None):
+    def __init__(self, startState=0, endStates_dict=None, states_list=None):
         if endStates_dict is None:
             endStates_dict = {}
-        if states_dict is None:
-            states_dict = {}
+        if states_list is None:
+            states_list = []
         self.startState = startState
         self.endStates_dict = endStates_dict  # int: int, number: actionIndex
-        self.states_list = states_dict  # DFAstates's list
+        self.states_list = states_list  # DFAstates's list
 
 
 @unique
@@ -76,6 +75,7 @@ class LexfileState(IntEnum):
     Part2 = 2
     Part3 = 3
     Part4 = 4
+
 
 @unique
 class Mode(IntEnum):

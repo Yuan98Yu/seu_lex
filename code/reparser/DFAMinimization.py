@@ -1,5 +1,8 @@
-from ..structs import ALLSET, DFAstate, DFA
-from random import choice
+import os, sys
+top_path = os.path.abspath(os.path.join('..'))
+sys.path.append(top_path)
+from structs import ALLSET, DFAstate, DFA
+import logging
 
 
 class DFA_Minimization_parser:
@@ -16,7 +19,11 @@ class DFA_Minimization_parser:
         for p in origin_dfa.endStates_dict.keys():
             new_dfa.endStates_dict[self.statesSetsMap[p]] = origin_dfa.endStates_dict[p]
         for k in range(len(self.statesSetsVec)):
-            pivot_state = origin_dfa.states_list[choice(self.statesSetsVec[k])]
+            if len(self.statesSetsVec[k]) == 0:
+                continue
+            tmp = self.statesSetsVec[k].pop()
+            self.statesSetsVec[k].add(tmp)
+            pivot_state = origin_dfa.states_list[tmp]
             new_state = DFAstate(k)
             for key, value in pivot_state.edges.items():
                 new_state.edges[key] = self.statesSetsMap[value]
@@ -28,12 +35,14 @@ class DFA_Minimization_parser:
         flag = False
         split_set_number = 0
         # 找到一个需要处理的集合
-        for k in range(DFAstate_list):
+        for k in range(len(self.statesSetsVec)):
             s = self.statesSetsVec[k]
             if len(s) == 1:
                 continue
             else:
-                stantard = DFAstate_list[choice(s)]
+                tmp = s.pop()
+                s.add(tmp)
+                stantard = DFAstate_list[tmp]
                 for c in ALLSET:
                     for i in s:
                         state = DFAstate_list[i]
@@ -51,6 +60,8 @@ class DFA_Minimization_parser:
                     break
         for s in new_set:
             self.statesSetsVec[split_set_number].discard(s)
+            if len(self.statesSetsVec[split_set_number]) == 0:
+                logging.debug("empty!")
             self.statesSetsMap[s] = self.count
 
         self.statesSetsVec.append(new_set)
@@ -70,7 +81,11 @@ class DFA_Minimization_parser:
             if e.number not in endStates_dict.keys():
                 tmpset.add(e.number)
                 self.statesSetsMap[e.number] = self.count
+
+        if len(tmpset) == 0:
+            logging.debug("tmpset is empty!")
         self.statesSetsVec.append(tmpset)
+
         self.count += 1
 
         while self.__scan(states_list):
