@@ -30,7 +30,7 @@ class RE_parser:
         dfa = self.NFA2DFA_parser.NFA2DFA(nfa)
         mini_dfa = self.DFA_minimization_parser.DFA_minimize(dfa)
         arrays, endVec = self.DFA2Array_parser.dfa2array(mini_dfa, suffix_rules)
-        return arrays, endVec
+        return arrays, endVec, mini_dfa
 
 
 if __name__ == '__main__':

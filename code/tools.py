@@ -1,3 +1,4 @@
+from struct import *
 def print_result_of_lexfile_parser(maps, rules, p1, p4):
     print("regular expressions".center(30, '*'))
     i = 0
@@ -28,6 +29,8 @@ def show_rules(filePath, rules):
 
 def show_nfa(filePath, nfa):
     with open(filePath, 'w') as f:
+        f.write('the total nfa state number is %d\n'% len(nfa.states_dict.values()))
+        f.write('the total nfa final state number is %d\n'%len(nfa.endStates_dict))
         for nfa_state in nfa.states_dict.values():
             print('number:%d\nedges:\t' % nfa_state.number)
             f.write('number:%d\nedges:\t' % nfa_state.number)
@@ -43,6 +46,8 @@ def show_nfa(filePath, nfa):
 
 def show_dfa(filePath, dfa):
     with open(filePath, 'w') as f:
+        f.write('the total dfa state number is %d\n' % len(dfa.states_list))
+        f.write('the total dfa final state number is %d\n'%len(dfa.endStates_dict))
         for dfa_state in dfa.states_list:
             print('dfaNode_number:%d\nedges:\t' % dfa_state.number)
             f.write('number:%d\nedges:\t' % dfa_state.number)

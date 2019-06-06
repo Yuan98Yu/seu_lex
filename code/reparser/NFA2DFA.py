@@ -33,8 +33,9 @@ class NFA2DFA_parser:
         find = False
         for NFA_state_number in NFAstates_in_DFAstate:
             if NFA_state_number in endStates_in_NFA.keys():
-                if find and (endState_number > NFA_state_number):
-                    endState_number = NFA_state_number
+                if find:
+                    if endState_number > NFA_state_number:
+                        endState_number = NFA_state_number
                 else:
                     endState_number = NFA_state_number
                     find = True

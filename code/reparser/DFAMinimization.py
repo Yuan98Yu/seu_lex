@@ -19,8 +19,6 @@ class DFA_Minimization_parser:
         for p in origin_dfa.endStates_dict.keys():
             new_dfa.endStates_dict[self.statesSetsMap[p]] = origin_dfa.endStates_dict[p]
         for k in range(len(self.statesSetsVec)):
-            if len(self.statesSetsVec[k]) == 0:
-                continue
             tmp = self.statesSetsVec[k].pop()
             self.statesSetsVec[k].add(tmp)
             pivot_state = origin_dfa.states_list[tmp]
@@ -48,9 +46,13 @@ class DFA_Minimization_parser:
                         state = DFAstate_list[i]
                         findStateIt = state.edges.get(c, -1)
                         findStandardIt = stantard.edges.get(c, -1)
-                        if (findStateIt != -1 and findStandardIt == -1) or (findStateIt == -1 and findStandardIt != -1) \
-                                or (findStateIt != -1 and findStandardIt != -1 \
-                                    and self.statesSetsMap.get(findStandardIt) != self.statesSetsMap.get(findStateIt)):
+                        if (findStateIt != -1 and findStandardIt == -1):
+                            flag = True
+                            new_set.add(i)
+                        elif (findStateIt == -1 and findStandardIt != -1):
+                            flag = True
+                            new_set.add(i)
+                        elif self.statesSetsMap.get(findStandardIt) != self.statesSetsMap.get(findStateIt):
                             flag = True
                             new_set.add(i)
                     if flag:
@@ -63,9 +65,9 @@ class DFA_Minimization_parser:
             if len(self.statesSetsVec[split_set_number]) == 0:
                 logging.debug("empty!")
             self.statesSetsMap[s] = self.count
-
-        self.statesSetsVec.append(new_set)
-        self.count += 1
+        if len(new_set)!=0:
+            self.statesSetsVec.append(new_set)
+            self.count += 1
 
         return flag
 

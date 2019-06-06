@@ -113,7 +113,8 @@ class Suffix2NFA_parser:
                     self.NFA_stack.append(pushNFA)
                 it += 1
             # 将action 赋给栈顶的NFA的终态
-            self.NFA_stack[-1].endStates_dict[0] = i
+            for endnumber in self.NFA_stack[-1].endStates_dict.keys():
+                self.NFA_stack[-1].endStates_dict[endnumber] = i
         # 将得到的所有NFA合并
         final_NFA = self.NFA_stack.pop()
         while self.NFA_stack:

@@ -8,10 +8,10 @@ if __name__ == '__main__':
     print("test of REStandardization.py".center(80, '-'))
     re_standardization_parser = REStandardization_parser()
     rules = list()
-    re_map = dict({'L': '[a-z]'})
+    re_map = dict()
 
     print("Test1: [a-z]".center(50, '*'))
-    rules.append(Rule("{L}", "printf(aas)"))
+    rules.append(Rule("L?'(\\\\.|[^\\\\'\\n])+'}", "printf(aas)"))
     rules = re_standardization_parser.re_standardize(rules, re_map)
     i = 0
     for rule in rules:

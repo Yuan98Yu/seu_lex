@@ -1,123 +1,30 @@
-DEBUG:root:p: [a-z]
-DEBUG:root:p1:L
-DEBUG:root:reMap[p1]:[a-z]
-DEBUG:root:handle_quote:{L}
-DEBUG:root:rule.pattern:L
-DEBUG:root:reMap:
-DEBUG:root:{'L': '[a-z]'}
-DEBUG:root:findIt:[a-z]
-DEBUG:root:replace_brace:[a-z]
-DEBUG:root:start construct_char_set, content=a-z
-DEBUG:root:start handle_escape, exp: a-z
-DEBUG:root:result exp: a-z
-DEBUG:root:it in construct_char_set: 0,	stemp[it]:a
-DEBUG:root:it in construct_char_set: 1,	stemp[it]:-
-DEBUG:root:sit:27, eit:51
-DEBUG:root:it in construct_char_set: 2,	stemp[it]:z
-DEBUG:root:result s: dwvpefjrkstqalczgxbuymoihn
-DEBUG:root:replace_square_brace:(d|w|v|p|e|f|j|r|k|s|t|q|a|l|c|z|g|x|b|u|y|m|o|i|h|n)
-DEBUG:root:replace_dot:(d|w|v|p|e|f|j|r|k|s|t|q|a|l|c|z|g|x|b|u|y|m|o|i|h|n)
-DEBUG:root:replace_question_and_add:(d|w|v|p|e|f|j|r|k|s|t|q|a|l|c|z|g|x|b|u|y|m|o|i|h|n)
-DEBUG:root:start handle_escape, exp: (d|w|v|p|e|f|j|r|k|s|t|q|a|l|c|z|g|x|b|u|y|m|o|i|h|n)
-DEBUG:root:result exp: (d|w|v|p|e|f|j|r|k|s|t|q|a|l|c|z|g|x|b|u|y|m|o|i|h|n)
-DEBUG:root:handle_escape:(d|w|v|p|e|f|j|r|k|s|t|q|a|l|c|z|g|x|b|u|y|m|o|i|h|n)
-DEBUG:root:add_dot:(d|w|v|p|e|f|j|r|k|s|t|q|a|l|c|z|g|x|b|u|y|m|o|i|h|n)
-DEBUG:root:re2suffix rule: 0
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:state_number in next_states: 0
-DEBUG:root:in flag
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
-DEBUG:root:in for
+DEBUG:root:handle_quote:L?'(\\.|[^\\'\n])+'}
+DEBUG:root:replace_brace:L?'(\\.|[^\\'\n])+'}
+DEBUG:root:start construct_char_set, content=\\'\n
+DEBUG:root:start handle_escape, exp: \\'\n
+DEBUG:root:result exp: \'
+
+DEBUG:root:len of exp: 3
+DEBUG:root:it in construct_char_set: 0,	stemp[it]:\
+DEBUG:root:it in construct_char_set: 1,	stemp[it]:'
+DEBUG:root:it in construct_char_set: 2,	stemp[it]:
+
+DEBUG:root:result s: |_cmx[pi0:LhbBY9 1du-rHog.T(<Q5WeEskK*72vn?4~/",XMNRq!F;yIU&+6VZAl%j>	t3JDPGS#^f=}Oz]{C8)aw
+DEBUG:root:replace_square_brace:L?'(\\.|(`||_|c|m|x|`[|p|i|0|:|L|h|b|B|Y|9| |1|d|u|-|r|H|o|g|`.|T|`(|<|Q|5|W|e|E|s|k|K|`*|7|2|v|n|`?||4|~|/|"|,|X|M|N|R|q|!|F|;||y|I|U|&|`+|6|V|Z|A|l|%|j|>|	|t|3|J|D|P|G|S|#|^|f|=|`}|O|z|`]|`{|C|8|`)|a|w))+'}
+DEBUG:root:start construct_char_set, content=
+
+DEBUG:root:start handle_escape, exp: 
+
+DEBUG:root:result exp: 
+
+DEBUG:root:len of exp: 1
+DEBUG:root:it in construct_char_set: 0,	stemp[it]:
+
+DEBUG:root:result s: |_cmx[pi0:LhbBY9 1du-rHog.T(<\Q5WeEskK*72vn?4~/",XMNRq!F;yIU&+6VZAl%j>	t3JDP'GS#^f=}Oz]{C8)aw
+DEBUG:root:replace_dot:L?'(\\(`||_|c|m|x|`[|p|i|0|:|L|h|b|B|Y|9| |1|d|u|-|r|H|o|g|`.|T|`(|<|\|Q|5|W|e|E|s|k|K|`*|7|2|v|n|`?||4|~|/|"|,|X|M|N|R|q|!|F|;||y|I|U|&|`+|6|V|Z|A|l|%|j|>|	|t|3|J|D|P|'|G|S|#|^|f|=|`}|O|z|`]|`{|C|8|`)|a|w)|(`||_|c|m|x|`[|p|i|0|:|L|h|b|B|Y|9| |1|d|u|-|r|H|o|g|`.|T|`(|<|Q|5|W|e|E|s|k|K|`*|7|2|v|n|`?||4|~|/|"|,|X|M|N|R|q|!|F|;||y|I|U|&|`+|6|V|Z|A|l|%|j|>|	|t|3|J|D|P|G|S|#|^|f|=|`}|O|z|`]|`{|C|8|`)|a|w))+'}
+DEBUG:root:replace_question_and_add:L?'(\\(`||_|c|m|x|`[|p|i|0|:|L|h|b|B|Y|9| |1|d|u|-|r|H|o|g|`.|T|`(|<|\|Q|5|W|e|E|s|k|K|`*|7|2|v|n|`?||4|~|/|"|,|X|M|N|R|q|!|F|;||y|I|U|&|`+|6|V|Z|A|l|%|j|>|	|t|3|J|D|P|'|G|S|#|^|f|=|`}|O|z|`]|`{|C|8|`)|a|w)|(`||_|c|m|x|`[|p|i|0|:|L|h|b|B|Y|9| |1|d|u|-|r|H|o|g|`.|T|`(|<|Q|5|W|e|E|s|k|K|`*|7|2|v|n|`?||4|~|/|"|,|X|M|N|R|q|!|F|;||y|I|U|&|`+|6|V|Z|A|l|%|j|>|	|t|3|J|D|P|G|S|#|^|f|=|`}|O|z|`]|`{|C|8|`)|a|w))(\\(`||_|c|m|x|`[|p|i|0|:|L|h|b|B|Y|9| |1|d|u|-|r|H|o|g|`.|T|`(|<|\|Q|5|W|e|E|s|k|K|`*|7|2|v|n|`?||4|~|/|"|,|X|M|N|R|q|!|F|;||y|I|U|&|`+|6|V|Z|A|l|%|j|>|	|t|3|J|D|P|'|G|S|#|^|f|=|`}|O|z|`]|`{|C|8|`)|a|w)|(`||_|c|m|x|`[|p|i|0|:|L|h|b|B|Y|9| |1|d|u|-|r|H|o|g|`.|T|`(|<|Q|5|W|e|E|s|k|K|`*|7|2|v|n|`?||4|~|/|"|,|X|M|N|R|q|!|F|;||y|I|U|&|`+|6|V|Z|A|l|%|j|>|	|t|3|J|D|P|G|S|#|^|f|=|`}|O|z|`]|`{|C|8|`)|a|w))*'}
+DEBUG:root:start handle_escape, exp: L?'(\\(`||_|c|m|x|`[|p|i|0|:|L|h|b|B|Y|9| |1|d|u|-|r|H|o|g|`.|T|`(|<|\|Q|5|W|e|E|s|k|K|`*|7|2|v|n|`?||4|~|/|"|,|X|M|N|R|q|!|F|;||y|I|U|&|`+|6|V|Z|A|l|%|j|>|	|t|3|J|D|P|'|G|S|#|^|f|=|`}|O|z|`]|`{|C|8|`)|a|w)|(`||_|c|m|x|`[|p|i|0|:|L|h|b|B|Y|9| |1|d|u|-|r|H|o|g|`.|T|`(|<|Q|5|W|e|E|s|k|K|`*|7|2|v|n|`?||4|~|/|"|,|X|M|N|R|q|!|F|;||y|I|U|&|`+|6|V|Z|A|l|%|j|>|	|t|3|J|D|P|G|S|#|^|f|=|`}|O|z|`]|`{|C|8|`)|a|w))(\\(`||_|c|m|x|`[|p|i|0|:|L|h|b|B|Y|9| |1|d|u|-|r|H|o|g|`.|T|`(|<|\|Q|5|W|e|E|s|k|K|`*|7|2|v|n|`?||4|~|/|"|,|X|M|N|R|q|!|F|;||y|I|U|&|`+|6|V|Z|A|l|%|j|>|	|t|3|J|D|P|'|G|S|#|^|f|=|`}|O|z|`]|`{|C|8|`)|a|w)|(`||_|c|m|x|`[|p|i|0|:|L|h|b|B|Y|9| |1|d|u|-|r|H|o|g|`.|T|`(|<|Q|5|W|e|E|s|k|K|`*|7|2|v|n|`?||4|~|/|"|,|X|M|N|R|q|!|F|;||y|I|U|&|`+|6|V|Z|A|l|%|j|>|	|t|3|J|D|P|G|S|#|^|f|=|`}|O|z|`]|`{|C|8|`)|a|w))*'}
+DEBUG:root:result exp: L?'(\(`||_|c|m|x|`[|p|i|0|:|L|h|b|B|Y|9| |1|d|u|-|r|H|o|g|`.|T|`(|<|\|Q|5|W|e|E|s|k|K|`*|7|2|v|n|`?||4|~|/|"|,|X|M|N|R|q|!|F|;||y|I|U|&|`+|6|V|Z|A|l|%|j|>|	|t|3|J|D|P|'|G|S|#|^|f|=|`}|O|z|`]|`{|C|8|`)|a|w)|(`||_|c|m|x|`[|p|i|0|:|L|h|b|B|Y|9| |1|d|u|-|r|H|o|g|`.|T|`(|<|Q|5|W|e|E|s|k|K|`*|7|2|v|n|`?||4|~|/|"|,|X|M|N|R|q|!|F|;||y|I|U|&|`+|6|V|Z|A|l|%|j|>|	|t|3|J|D|P|G|S|#|^|f|=|`}|O|z|`]|`{|C|8|`)|a|w))(\(`||_|c|m|x|`[|p|i|0|:|L|h|b|B|Y|9| |1|d|u|-|r|H|o|g|`.|T|`(|<|\|Q|5|W|e|E|s|k|K|`*|7|2|v|n|`?||4|~|/|"|,|X|M|N|R|q|!|F|;||y|I|U|&|`+|6|V|Z|A|l|%|j|>|	|t|3|J|D|P|'|G|S|#|^|f|=|`}|O|z|`]|`{|C|8|`)|a|w)|(`||_|c|m|x|`[|p|i|0|:|L|h|b|B|Y|9| |1|d|u|-|r|H|o|g|`.|T|`(|<|Q|5|W|e|E|s|k|K|`*|7|2|v|n|`?||4|~|/|"|,|X|M|N|R|q|!|F|;||y|I|U|&|`+|6|V|Z|A|l|%|j|>|	|t|3|J|D|P|G|S|#|^|f|=|`}|O|z|`]|`{|C|8|`)|a|w))*'}
+DEBUG:root:len of exp: 814
+DEBUG:root:handle_escape:L?'(\(`||_|c|m|x|`[|p|i|0|:|L|h|b|B|Y|9| |1|d|u|-|r|H|o|g|`.|T|`(|<|\|Q|5|W|e|E|s|k|K|`*|7|2|v|n|`?||4|~|/|"|,|X|M|N|R|q|!|F|;||y|I|U|&|`+|6|V|Z|A|l|%|j|>|	|t|3|J|D|P|'|G|S|#|^|f|=|`}|O|z|`]|`{|C|8|`)|a|w)|(`||_|c|m|x|`[|p|i|0|:|L|h|b|B|Y|9| |1|d|u|-|r|H|o|g|`.|T|`(|<|Q|5|W|e|E|s|k|K|`*|7|2|v|n|`?||4|~|/|"|,|X|M|N|R|q|!|F|;||y|I|U|&|`+|6|V|Z|A|l|%|j|>|	|t|3|J|D|P|G|S|#|^|f|=|`}|O|z|`]|`{|C|8|`)|a|w))(\(`||_|c|m|x|`[|p|i|0|:|L|h|b|B|Y|9| |1|d|u|-|r|H|o|g|`.|T|`(|<|\|Q|5|W|e|E|s|k|K|`*|7|2|v|n|`?||4|~|/|"|,|X|M|N|R|q|!|F|;||y|I|U|&|`+|6|V|Z|A|l|%|j|>|	|t|3|J|D|P|'|G|S|#|^|f|=|`}|O|z|`]|`{|C|8|`)|a|w)|(`||_|c|m|x|`[|p|i|0|:|L|h|b|B|Y|9| |1|d|u|-|r|H|o|g|`.|T|`(|<|Q|5|W|e|E|s|k|K|`*|7|2|v|n|`?||4|~|/|"|,|X|M|N|R|q|!|F|;||y|I|U|&|`+|6|V|Z|A|l|%|j|>|	|t|3|J|D|P|G|S|#|^|f|=|`}|O|z|`]|`{|C|8|`)|a|w))*'}
+DEBUG:root:add_dot:L.?.'.(\.(`||_|c|m|x|`[|p|i|0|:|L|h|b|B|Y|9| |1|d|u|-|r|H|o|g|`.|T|`(|<|\|Q|5|W|e|E|s|k|K|`*|7|2|v|n|`?||4|~|/|"|,|X|M|N|R|q|!|F|;||y|I|U|&|`+|6|V|Z|A|l|%|j|>|	|t|3|J|D|P|'|G|S|#|^|f|=|`}|O|z|`]|`{|C|8|`)|a|w)|(`||_|c|m|x|`[|p|i|0|:|L|h|b|B|Y|9| |1|d|u|-|r|H|o|g|`.|T|`(|<|Q|5|W|e|E|s|k|K|`*|7|2|v|n|`?||4|~|/|"|,|X|M|N|R|q|!|F|;||y|I|U|&|`+|6|V|Z|A|l|%|j|>|	|t|3|J|D|P|G|S|#|^|f|=|`}|O|z|`]|`{|C|8|`)|a|w)).(\.(`||_|c|m|x|`[|p|i|0|:|L|h|b|B|Y|9| |1|d|u|-|r|H|o|g|`.|T|`(|<|\|Q|5|W|e|E|s|k|K|`*|7|2|v|n|`?||4|~|/|"|,|X|M|N|R|q|!|F|;||y|I|U|&|`+|6|V|Z|A|l|%|j|>|	|t|3|J|D|P|'|G|S|#|^|f|=|`}|O|z|`]|`{|C|8|`)|a|w)|(`||_|c|m|x|`[|p|i|0|:|L|h|b|B|Y|9| |1|d|u|-|r|H|o|g|`.|T|`(|<|Q|5|W|e|E|s|k|K|`*|7|2|v|n|`?||4|~|/|"|,|X|M|N|R|q|!|F|;||y|I|U|&|`+|6|V|Z|A|l|%|j|>|	|t|3|J|D|P|G|S|#|^|f|=|`}|O|z|`]|`{|C|8|`)|a|w))*.'.}

@@ -10,7 +10,7 @@ class REStandardization_parser:
         logging.FileHandler(log_file_path+'/debug_REStandardization.txt', 'w')
     def __handle_escape(self, exp, isin):
         logging.debug('start handle_escape, exp: %s' % exp)
-        stemp = ""
+        stemp = ''
         flag = False
         for c in exp:
             if isin:  # 转义[]内的所有可能字符
@@ -33,13 +33,14 @@ class REStandardization_parser:
             else:
                 if flag:
                     flag = False
-                    if c == '"' or c == '\\':
+                    if c == '\"' or c == '\\':
                         stemp = stemp[0:-1]
                 elif c == '\\':
                     flag = True
             stemp += c
         exp = stemp
         logging.debug('result exp: %s' % exp)
+        logging.debug('len of exp: %d'% len(exp))
         return exp
 
     def __handle_quote(self, exp):
@@ -50,8 +51,10 @@ class REStandardization_parser:
             if exp[exp_it] == '\"' and ((exp_it != sexp_it and exp[exp_it-1] != '\\') or exp_it == sexp_it):
                 if not in_quote:
                     in_quote = True
+                    continue
                 else:
                     in_quote = False
+                    continue
             elif in_quote and exp[exp_it] in ESCAPEDCHARS:
                 char_vec.append('`')
             char_vec.append(exp[exp_it])
@@ -79,7 +82,7 @@ class REStandardization_parser:
         s = set()  # output
         logging.debug("start construct_char_set, content=%s" % content)
         stemp = content
-        self.__handle_escape(stemp, True)
+        stemp = self.__handle_escape(stemp, True)
         # 处理[a-z]
         tmp_set = set()
         for it in range(len(stemp)):
@@ -97,7 +100,9 @@ class REStandardization_parser:
                     sit += 1
             else:
                 tmp_set.add(stemp[it])
+
         if n:
+            #logging.debug('tmp_set is %s'% tmp_set)
             for c in ALLSET:
                 if c not in tmp_set:
                     s.add(c)
@@ -143,6 +148,7 @@ class REStandardization_parser:
                 inSquareBrackes = True
                 sbcontent = ""
             elif exp[exp_it] == ']' and inSquareBrackes and (exp_it == 0 or exp[exp_it-1] != '`'):
+                #logging.debug("find the ]")
                 inSquareBrackes = False
                 char_vec.append('(')
                 s = set()
@@ -188,7 +194,7 @@ class REStandardization_parser:
         char_vec = []
         exp_it = 0
         while exp_it < len(exp):
-            if exp[exp_it] in ['+', '？'] and (exp_it == 0 or (exp_it != 0 and exp[exp_it-1] != '`')):
+            if exp[exp_it] in ['+', '?'] and (exp_it == 0 or (exp_it != 0 and exp[exp_it-1] != '`')):
                 counter = 0
                 if (exp_it != 0 and exp[exp_it-1] == ')') and ((exp_it-1 != 0 and exp[exp_it-2] != '`') or exp_it-1 == 0):
                     pre_exp_it = exp_it
@@ -226,7 +232,7 @@ class REStandardization_parser:
                         char_vec.append('@')
                         char_vec.append('|')
                         char_vec.append(c)
-                        char_vec.append('}')
+                        char_vec.append(')')
                     else:
                         char_vec.append(c)
                         char_vec.append('*')

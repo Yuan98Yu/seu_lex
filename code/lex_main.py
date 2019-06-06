@@ -45,16 +45,24 @@ if __name__ == '__main__':
         suffix_rules = re_parser.Re2suffix_parser.re2suffix(standard_rules)
         print("suffix_re".center(170, '-'))
         show_rules('tmp/suffix_re.txt', suffix_rules)
-        nfa = re_parser.suffix2NFA_parser.suffix2NFA(suffix_rules)
+        nfa = re_parser.suffix2NFA_parser.suffix2NFA(suffix_rules[0:])
         show_nfa('tmp/nfa.txt', nfa)
         dfa = re_parser.NFA2DFA_parser.NFA2DFA(nfa)
+        print('total number', dfa)
         show_dfa('tmp/dfa.txt', dfa)
         logging.FileHandler("tmp/debug_miniDFA.txt", 'w')
         mini_dfa = re_parser.DFA_minimization_parser.DFA_minimize(dfa)
         show_dfa('tmp/mini_dfa.txt', mini_dfa)
 
+
         arrays, endVec = re_parser.DFA2Array_parser.dfa2array(mini_dfa, suffix_rules)
-        code_generator = CCodeGenerator()
+        print("Code_generator start".center(100, '-'))
         mode = Mode.LEX_TEST
-        code_generator.generate_c_code(arrays, endVec, p1, p4, mini_dfa.startState, mode)
+        c_code_generator.generate_c_code(arrays, endVec, p1, p4, mini_dfa.startState, mode, args.output)
+
+
 # -------------------------------- end of test of reparser --------------------------------------
+    else:
+        arrays, endVec, mini_dfa= re_parser.parseRegexs(rules, maps)
+        mode = Mode.LEX_TEST
+        c_code_generator(arrays, endVec, p1, p4, mini_dfa.startState, mode, args.output)

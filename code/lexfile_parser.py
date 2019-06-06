@@ -93,6 +93,7 @@ class LexFileParser:
 
                     # 如果不在{}之间
                     else:
+                        '''
                         # 对[和"开头的作特殊处理
                         if line[0] in ['[', '"', "'"]:
                             if line[0] == '[':
@@ -121,15 +122,21 @@ class LexFileParser:
                             rhd = line[i:]
                             # trim(rhd)
                             rhd = rhd.strip()
-
+                        
                         if rhd != '{':
                             logging.debug("rhd is %s, at line %d" % (rhd, lineCount))
                             action.append(rhd)
                             rules.append(Rule(lhd, action))
                             action.clear()
+                        
                         else:
                             logging.debug("Find {! at line %d" % lineCount)
                             findUpperPar = True
+                        '''
+                        logging.debug("Find {! at line %d" % lineCount)
+                        findUpperPar=True
+                        lhd=line[0:-1].strip()
+
 
             elif state == LexfileState.Part4:
                 part4_lines.append(line)

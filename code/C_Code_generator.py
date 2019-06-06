@@ -5,7 +5,7 @@ class CCodeGenerator:
     def __print_array(self, name, size, value, file):
         array_buf = value
         file.write("static int	%s[%d]=\n" % (name, size))
-        file.write("\t{ 0,\n")
+        file.write("{ 0,\n")
         for i in range(1, size):
             file.write("%-4s" % array_buf[i])
             if i != size - 1:
@@ -14,10 +14,10 @@ class CCodeGenerator:
                 file.write("\n")
         file.write("};\n")
 
-    def generate_c_code(self, arrays, endVec, part1, part4, startState, mode):
+    def generate_c_code(self, arrays, endVec, part1, part4, startState, mode, filepath):
         if len(arrays) != 4:
             return -1
-        with open("lex.c", 'w') as file:
+        with open(filepath, 'w') as file:
             file.write("#define _CRT_SECURE_NO_WARNINGS\n")
             file.write("#include\"stdio.h\"\n")
             file.write("#include\"stdlib.h\"\n")
@@ -166,9 +166,10 @@ class CCodeGenerator:
             # ...此处省略了一些东西
             file.write("break;\n")
             for i in range(len(endVec)):
-                file.write("case %d:\n" % i+1)
-                for j in range(len(endVec[i].actions)):
-                    file.write("endVec[i].actions[j]\n")
+                p=i+1
+                file.write("case %d:\n" % p)
+                for j in range(len(endVec[i].action)):
+                    file.write(endVec[i].action[j]+"\n")
                 file.write("break;\n")
 
             file.write("default:\n")
