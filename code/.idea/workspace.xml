@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2050ce1-4689-4b5b-81ef-b6bb009a8be7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/test_REstandardization.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_reparser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_suffix2NFA.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/C_Code_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/C_Code_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lex.c" beforeDir="false" afterPath="$PROJECT_DIR$/lex.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lex_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/lex_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lexfile_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/lexfile_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reparser/DFA2Array.py" beforeDir="false" afterPath="$PROJECT_DIR$/reparser/DFA2Array.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reparser/DFAMinimization.py" beforeDir="false" afterPath="$PROJECT_DIR$/reparser/DFAMinimization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reparser/NFA2DFA.py" beforeDir="false" afterPath="$PROJECT_DIR$/reparser/NFA2DFA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reparser/REStandardization.py" beforeDir="false" afterPath="$PROJECT_DIR$/reparser/REStandardization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reparser/re2suffix.py" beforeDir="false" afterPath="$PROJECT_DIR$/reparser/re2suffix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reparser/re_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/re_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reparser/suffix2NFA.py" beforeDir="false" afterPath="$PROJECT_DIR$/reparser/suffix2NFA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structs.py" beforeDir="false" afterPath="$PROJECT_DIR$/structs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/LexFileParser.log" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/LexFileParser.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/re_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/re_parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/nfa.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/nfa.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/standard_re.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/standard_re.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/suffix_re.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/suffix_re.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/structs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+            <state relative-caret-position="-1354">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -41,10 +32,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reparser/REStandardization.py">
+        <entry file="file://$PROJECT_DIR$/lex_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="9" column="76" selection-start-line="9" selection-start-column="76" selection-end-line="9" selection-end-column="76" />
+            <state relative-caret-position="263">
+              <caret line="68" column="35" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
+              <folding>
+                <element signature="e#15#55#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/reparser/DFA2Array.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-143">
+            <state relative-caret-position="550">
               <caret line="31" column="70" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -62,31 +56,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lex_main.py">
+        <entry file="file://$PROJECT_DIR$/lexfile_parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
+            <state relative-caret-position="-2304">
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
               <folding>
-                <element signature="e#15#55#0" expanded="true" />
+                <element signature="e#16#54#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/C_Code_generator.py">
+        <entry file="file://$PROJECT_DIR$/reparser/NFA2DFA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3138">
-              <caret line="204" column="4" selection-start-line="204" selection-start-column="4" selection-end-line="204" selection-end-column="4" />
+            <state>
+              <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lex.l">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/C_Code_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2638">
-              <caret line="217" column="19" selection-start-line="217" selection-start-column="13" selection-end-line="217" selection-end-column="19" />
+            <state relative-caret-position="135">
+              <caret line="115" column="30" selection-start-line="115" selection-start-column="30" selection-end-line="115" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -94,18 +91,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lex.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-43863" />
+            <state relative-caret-position="143">
+              <caret line="8008" column="14" selection-start-line="8008" selection-start-column="8" selection-end-line="8008" selection-end-column="14" />
+            </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reparser/suffix2NFA.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="97" column="36" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/re_parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+            <state relative-caret-position="210">
+              <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
               <folding>
                 <element signature="e#0#63#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lex.l">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1445">
+              <caret line="217" column="19" selection-start-line="217" selection-start-column="13" selection-end-line="217" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -121,12 +138,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>return</find>
-      <find>return s</find>
-      <find>maps</find>
-      <find>.e</find>
-      <find>action</find>
-      <find>re_map</find>
       <find>reMap</find>
       <find>remap</find>
       <find>rules[i].pattern</find>
@@ -137,7 +148,6 @@
       <find>;</find>
       <find>inc_op</find>
       <find>identify_set</find>
-      <find>print</find>
       <find>find_ac</find>
       <find>__subset_construct</find>
       <find>NFAin</find>
@@ -151,6 +161,13 @@
       <find>rules</find>
       <find>ALLSET</find>
       <find>mode</find>
+      <find>endvec[i]</find>
+      <find>ERROR</find>
+      <find>endVec[i]</find>
+      <find>if mode == Mode.YACC_TEST:</find>
+      <find>print</find>
+      <find>result = find</find>
+      <find>printf</find>
     </findStrings>
     <replaceStrings>
       <replace>==</replace>
@@ -207,7 +224,6 @@
         <option value="$PROJECT_DIR$/test/test_suffix2NFA.py" />
         <option value="$PROJECT_DIR$/structs.py" />
         <option value="$PROJECT_DIR$/test/test_reparser.py" />
-        <option value="$PROJECT_DIR$/re_parser.py" />
         <option value="$PROJECT_DIR$/reparser/suffix2NFA.py" />
         <option value="$PROJECT_DIR$/tools.py" />
         <option value="$PROJECT_DIR$/reparser/re2suffix.py" />
@@ -216,16 +232,17 @@
         <option value="$PROJECT_DIR$/reparser/NFA2DFA.py" />
         <option value="$PROJECT_DIR$/reparser/DFAMinimization.py" />
         <option value="$PROJECT_DIR$/reparser/DFA2Array.py" />
+        <option value="$PROJECT_DIR$/re_parser.py" />
         <option value="$PROJECT_DIR$/lex_main.py" />
         <option value="$PROJECT_DIR$/C_Code_generator.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="245" />
-    <option name="y" value="-10" />
-    <option name="width" value="1800" />
-    <option name="height" value="970" />
+    <option name="x" value="116" />
+    <option name="y" value="-8" />
+    <option name="width" value="1092" />
+    <option name="height" value="765" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -233,7 +250,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -241,10 +257,21 @@
               <item name="code" type="b2602c69:ProjectViewProjectNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="reparser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -532,9 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tmp/raw_re.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_reparser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -552,26 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lexfile_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
-          <folding>
-            <element signature="e#16#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reparser/NFA2DFA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tmp/dfa.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8775" />
@@ -579,20 +583,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tmp/debug_re2suffix.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tmp/standard_re.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reparser/suffix2NFA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="105" column="60" selection-start-line="105" selection-start-column="60" selection-end-line="105" selection-end-column="60" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tmp/debug_REStandardization.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -621,40 +611,6 @@
     <entry file="file://$PROJECT_DIR$/tmp/debug_miniDFA.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tmp/mini_dfa.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="472" column="5" selection-start-line="472" selection-end-line="472" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reparser/DFAMinimization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reparser/DFA2Array.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-143">
-          <caret line="31" column="70" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reparser/REStandardization.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -662,42 +618,119 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/reparser/DFAMinimization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/mini_dfa.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9100">
+          <caret line="472" column="5" selection-start-line="472" selection-end-line="472" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/standard_re.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/raw_re.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reparser/suffix2NFA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="97" column="36" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1354">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lex.l">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="217" column="19" selection-start-line="217" selection-start-column="13" selection-end-line="217" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lexfile_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2304">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="e#16#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reparser/DFA2Array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="31" column="70" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reparser/NFA2DFA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/re_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lex_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
+        <state relative-caret-position="263">
+          <caret line="68" column="35" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
           <folding>
             <element signature="e#15#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/C_Code_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3138">
-          <caret line="204" column="4" selection-start-line="204" selection-start-column="4" selection-end-line="204" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lex.l">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2638">
-          <caret line="217" column="19" selection-start-line="217" selection-start-column="13" selection-end-line="217" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lex.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-43863" />
+        <state relative-caret-position="143">
+          <caret line="8008" column="14" selection-start-line="8008" selection-start-column="8" selection-end-line="8008" selection-end-column="14" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/re_parser.py">
+    <entry file="file://$PROJECT_DIR$/C_Code_generator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#63#0" expanded="true" />
-          </folding>
+          <caret line="115" column="30" selection-start-line="115" selection-start-column="30" selection-end-line="115" selection-end-column="30" />
         </state>
       </provider>
     </entry>

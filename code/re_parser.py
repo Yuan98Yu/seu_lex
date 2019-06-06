@@ -24,11 +24,17 @@ class RE_parser:
 
     def parseRegexs(self, rules, maps):
         # re标准化
+        print("RE Standardizing...")
         standard_rules = self.REStandardization_parser.re_standardize(rules, maps)
+        print("RE to SuffixRE...")
         suffix_rules = self.Re2suffix_parser.re2suffix(standard_rules)
+        print("SuffixRE to NFA...")
         nfa = self.suffix2NFA_parser.suffix2NFA(suffix_rules)
+        print("NFA to DFA...")
         dfa = self.NFA2DFA_parser.NFA2DFA(nfa)
+        print("DFA Minimization...")
         mini_dfa = self.DFA_minimization_parser.DFA_minimize(dfa)
+        print("DFA to Arrays...")
         arrays, endVec = self.DFA2Array_parser.dfa2array(mini_dfa, suffix_rules)
         return arrays, endVec, mini_dfa
 

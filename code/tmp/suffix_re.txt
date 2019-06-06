@@ -1,5 +1,5 @@
 rule 0: pattern:/`*. , action:['comment();', 'printf("MULTI_LINE_COMMENT");']
-rule 1: pattern://.z,|w|T|V||-|=|m|s|^|~|b|e|	|_| |i|o|u|7|'|U|A|a|v|Z|y|`.|L|"|<|S|{|D|K|?|8|O|6|;|#|E|>|\|+|n|0|}|!|p|1|h|J|%|4|N|j|H|r|l|x|9|q||`*|/|c|2|t|G|R|Y|5|Q|X|]|`(|d|`)|C|`||g|3|[|f|M|I|W|:|B|F|&|P|k|*. , action:['printf("SINGLE_LINE_COMMENT");']
+rule 1: pattern://.wY||v|k|r|S|n|=|2|B|H|	|m|9|c|`)|z|u|x|}|!|<|1|`||U|d|e|K|M|3|[|"|J|W|i|N|?|o|O|P|E|Z|&|6|`*|{||'|5|-|A|g|_|:|G|f|0|a|7|C|h|q|I|V|y|j|%|/|`(|~|p|#| |>|l|]|^|R|s|L|D|Q|+|4|t|X|`.|T|F|8|\|;|b|,|*. , action:['printf("SINGLE_LINE_COMMENT");']
 rule 2: pattern:au.t.o. , action:['printf("AUTO");']
 rule 3: pattern:_B.o.o.l. , action:['printf("BOOL");']
 rule 4: pattern:br.e.a.k. , action:['printf("BREAK");']
@@ -37,18 +37,18 @@ rule 35: pattern:un.s.i.g.n.e.d. , action:['printf("UNSIGNED");']
 rule 36: pattern:vo.i.d. , action:['printf("VOID");']
 rule 37: pattern:vo.l.a.t.i.l.e. , action:['printf("VOLATILE");']
 rule 38: pattern:wh.i.l.e. , action:['printf("WHILE");']
-rule 39: pattern:Ut|z|G|A|p|w|R|T|a|v|Y|V|h|J|Z|y|Q|L|X|m|S|N|j|H|d|s|D|K|r|C|b|g|l|e|x|_|i|O|f|o|M|q|u|I|W|B|E|F|c|P|k|n|Ut|z|G|A|p|w|R|T|a|v|Y|V|h|J|Z|y|Q|L|X|m|S|N|j|H|d|s|D|K|r|C|b|g|l|e|x|_|i|O|f|o|M|q|u|I|W|B|E|F|c|P|k|n|34|9|8|6|7|0|1|5|2||*. , action:['printf("IDENTIFIER");']
-rule 40: pattern:0Xx|.Aa|1|5|4|d|D|C|b|e|3|9|8|6|f|B|E|F|c|7|0|2|.Aa|1|5|4|d|D|C|b|e|3|9|8|6|f|B|E|F|c|7|0|2|*.@uU|@uU||lL|ll.|LL.|.|lL|ll.|LL.|uU|.||. , action:['printf("CONSTANT");']
-rule 41: pattern:034|6|7|0|1|5|2|*.@uU|@uU||lL|ll.|LL.|.|lL|ll.|LL.|uU|.||. , action:['printf("CONSTANT");']
-rule 42: pattern:34|9|8|6|7|1|5|2|34|9|8|6|7|0|1|5|2|*.@uU|@uU||lL|ll.|LL.|.|lL|ll.|LL.|uU|.||. , action:['printf("CONSTANT");']
-rule 43: pattern:@L|'.\z,|w|T|V||-|=|m|s|^|~|b|e|	|_| |i|o|u|7|'|U|A|a|v|Z|y|`.|L|"|<|S|{|D|K|?|8|O|6|;|#|E|>|\|+|n|0|}|!|p|1|h|J|%|4|N|j|H|r|l|x|9|q||`*|/|c|2|t|G|R|Y|5|Q|X|]|`(|d|`)|C|`||g|3|[|f|M|I|W|:|B|F|&|P|k|.z,|w|T|V||-|=|m|s|^|~|b|e|	|_| |i|o|u|7|U|A|a|v|Z|y|`.|L|"|<|S|{|D|K|?|8|O|6|;|#|E|>|+|n|0|}|!|p|1|h|J|%|4|N|j|H|r|l|x|9|q||`*|/|c|2|t|G|R|Y|5|Q|X|]|`(|d|`)|C|`||g|3|[|f|M|I|W|:|B|F|&|P|k||.\z,|w|T|V||-|=|m|s|^|~|b|e|	|_| |i|o|u|7|'|U|A|a|v|Z|y|`.|L|"|<|S|{|D|K|?|8|O|6|;|#|E|>|\|+|n|0|}|!|p|1|h|J|%|4|N|j|H|r|l|x|9|q||`*|/|c|2|t|G|R|Y|5|Q|X|]|`(|d|`)|C|`||g|3|[|f|M|I|W|:|B|F|&|P|k|.z,|w|T|V||-|=|m|s|^|~|b|e|	|_| |i|o|u|7|U|A|a|v|Z|y|`.|L|"|<|S|{|D|K|?|8|O|6|;|#|E|>|+|n|0|}|!|p|1|h|J|%|4|N|j|H|r|l|x|9|q||`*|/|c|2|t|G|R|Y|5|Q|X|]|`(|d|`)|C|`||g|3|[|f|M|I|W|:|B|F|&|P|k||*.'. , action:['printf("CONSTANT");']
-rule 44: pattern:34|9|8|6|7|0|1|5|2|34|9|8|6|7|0|1|5|2|*.eE|@+-||.34|9|8|6|7|0|1|5|2|.34|9|8|6|7|0|1|5|2|*..@fF|l|L||. , action:['printf("CONSTANT");']
-rule 45: pattern:34|9|8|6|7|0|1|5|2|*`..34|9|8|6|7|0|1|5|2|.34|9|8|6|7|0|1|5|2|*.@eE|@+-||.34|9|8|6|7|0|1|5|2|.34|9|8|6|7|0|1|5|2|*.|.@fF|l|L||. , action:['printf("CONSTANT");']
-rule 46: pattern:34|9|8|6|7|0|1|5|2|34|9|8|6|7|0|1|5|2|*.`..34|9|8|6|7|0|1|5|2|*.@eE|@+-||.34|9|8|6|7|0|1|5|2|.34|9|8|6|7|0|1|5|2|*.|.@fF|l|L||. , action:['printf("CONSTANT");']
-rule 47: pattern:0Xx|.Aa|1|5|4|d|D|C|b|e|3|9|8|6|f|B|E|F|c|7|0|2|.Aa|1|5|4|d|D|C|b|e|3|9|8|6|f|B|E|F|c|7|0|2|*.Pp|@+-||.34|9|8|6|7|0|1|5|2|.34|9|8|6|7|0|1|5|2|*..@fF|l|L||. , action:['printf("CONSTANT");']
-rule 48: pattern:0Xx|.Aa|1|5|4|d|D|C|b|e|3|9|8|6|f|B|E|F|c|7|0|2|*.`..Aa|1|5|4|d|D|C|b|e|3|9|8|6|f|B|E|F|c|7|0|2|.Aa|1|5|4|d|D|C|b|e|3|9|8|6|f|B|E|F|c|7|0|2|*.Pp|@+-||.34|9|8|6|7|0|1|5|2|.34|9|8|6|7|0|1|5|2|*..@fF|l|L||. , action:['printf("CONSTANT");']
-rule 49: pattern:0Xx|.Aa|1|5|4|d|D|C|b|e|3|9|8|6|f|B|E|F|c|7|0|2|.Aa|1|5|4|d|D|C|b|e|3|9|8|6|f|B|E|F|c|7|0|2|*.`..Aa|1|5|4|d|D|C|b|e|3|9|8|6|f|B|E|F|c|7|0|2|*.Pp|@+-||.34|9|8|6|7|0|1|5|2|.34|9|8|6|7|0|1|5|2|*..@fF|l|L||. , action:['printf("CONSTANT");']
-rule 50: pattern:@L|".\z,|w|T|V||-|=|m|s|^|~|b|e|	|_| |i|o|u|7|'|U|A|a|v|Z|y|`.|L|"|<|S|{|D|K|?|8|O|6|;|#|E|>|\|+|n|0|}|!|p|1|h|J|%|4|N|j|H|r|l|x|9|q||`*|/|c|2|t|G|R|Y|5|Q|X|]|`(|d|`)|C|`||g|3|[|f|M|I|W|:|B|F|&|P|k|.z,|w|T|V||-|=|m|s|^|~|b|e|	|_| |i|o|u|7|'|U|A|a|v|Z|y|`.|L|<|S|{|D|K|?|8|O|6|;|#|E|>|+|n|0|}|!|p|1|h|J|%|4|N|j|H|r|l|x|9|q||`*|/|c|2|t|G|R|Y|5|Q|X|]|`(|d|`)|C|`||g|3|[|f|M|I|W|:|B|F|&|P|k||*.". , action:['printf("STRING_LITERAL");']
+rule 39: pattern:wY|l|v|U|d|k|s|r|R|S|e|D|L|K|M|n|Q|g|A|_|f|G|J|B|H|t|X|W|i|N|a|T|C|m|F|h|q|I|V|c|y|o|j|O|b|z|u|P|E|x|p|Z|wY|l|v|U|d|k|s|r|R|S|e|D|L|K|M|n|Q|g|A|_|f|G|J|B|H|t|X|W|i|N|a|T|C|m|F|h|q|I|V|c|y|o|j|O|b|z|u|P|E|x|p|Z|56|3|7|1|9|2|4|8|0||*. , action:['printf("IDENTIFIER");']
+rule 40: pattern:0xX|.61|d|e|D|5|3|A|f|2|4|B|0|a|7|C|F|9|c|8|b|E|.61|d|e|D|5|3|A|f|2|4|B|0|a|7|C|F|9|c|8|b|E|*.@uU|@uU||lL|ll.|LL.|.|lL|ll.|LL.|uU|.||. , action:['printf("CONSTANT");']
+rule 41: pattern:056|3|7|1|2|4|0|*.@uU|@uU||lL|ll.|LL.|.|lL|ll.|LL.|uU|.||. , action:['printf("CONSTANT");']
+rule 42: pattern:56|3|7|1|9|2|4|8|56|3|7|1|9|2|4|8|0|*.@uU|@uU||lL|ll.|LL.|.|lL|ll.|LL.|uU|.||. , action:['printf("CONSTANT");']
+rule 43: pattern:@L|'.\wY||v|k|r|S|n|=|2|B|H|	|m|9|c|`)|z|u|x|}|!|<|1|`||U|d|e|K|M|3|[|"|J|W|i|N|?|o|O|P|E|Z|&|6|`*|{||'|5|-|A|g|_|:|G|f|0|a|7|C|h|q|I|V|y|j|%|/|`(|~|p|#| |>|l|]|^|R|s|L|D|Q|+|4|t|X|`.|T|F|8|\|;|b|,|.wY||v|k|r|S|n|=|2|B|H|	|m|9|c|`)|z|u|x|}|!|<|1|`||U|d|e|K|M|3|[|"|J|W|i|N|?|o|O|P|E|Z|&|6|`*|{||5|-|A|g|_|:|G|f|0|a|7|C|h|q|I|V|y|j|%|/|`(|~|p|#| |>|l|]|^|R|s|L|D|Q|+|4|t|X|`.|T|F|8|;|b|,||.\wY||v|k|r|S|n|=|2|B|H|	|m|9|c|`)|z|u|x|}|!|<|1|`||U|d|e|K|M|3|[|"|J|W|i|N|?|o|O|P|E|Z|&|6|`*|{||'|5|-|A|g|_|:|G|f|0|a|7|C|h|q|I|V|y|j|%|/|`(|~|p|#| |>|l|]|^|R|s|L|D|Q|+|4|t|X|`.|T|F|8|\|;|b|,|.wY||v|k|r|S|n|=|2|B|H|	|m|9|c|`)|z|u|x|}|!|<|1|`||U|d|e|K|M|3|[|"|J|W|i|N|?|o|O|P|E|Z|&|6|`*|{||5|-|A|g|_|:|G|f|0|a|7|C|h|q|I|V|y|j|%|/|`(|~|p|#| |>|l|]|^|R|s|L|D|Q|+|4|t|X|`.|T|F|8|;|b|,||*.'. , action:['printf("CONSTANT");']
+rule 44: pattern:56|3|7|1|9|2|4|8|0|56|3|7|1|9|2|4|8|0|*.Ee|@-+||.56|3|7|1|9|2|4|8|0|.56|3|7|1|9|2|4|8|0|*..@fF|l|L||. , action:['printf("CONSTANT");']
+rule 45: pattern:56|3|7|1|9|2|4|8|0|*`..56|3|7|1|9|2|4|8|0|.56|3|7|1|9|2|4|8|0|*.@Ee|@-+||.56|3|7|1|9|2|4|8|0|.56|3|7|1|9|2|4|8|0|*.|.@fF|l|L||. , action:['printf("CONSTANT");']
+rule 46: pattern:56|3|7|1|9|2|4|8|0|56|3|7|1|9|2|4|8|0|*.`..56|3|7|1|9|2|4|8|0|*.@Ee|@-+||.56|3|7|1|9|2|4|8|0|.56|3|7|1|9|2|4|8|0|*.|.@fF|l|L||. , action:['printf("CONSTANT");']
+rule 47: pattern:0xX|.61|d|e|D|5|3|A|f|2|4|B|0|a|7|C|F|9|c|8|b|E|.61|d|e|D|5|3|A|f|2|4|B|0|a|7|C|F|9|c|8|b|E|*.pP|@-+||.56|3|7|1|9|2|4|8|0|.56|3|7|1|9|2|4|8|0|*..@fF|l|L||. , action:['printf("CONSTANT");']
+rule 48: pattern:0xX|.61|d|e|D|5|3|A|f|2|4|B|0|a|7|C|F|9|c|8|b|E|*.`..61|d|e|D|5|3|A|f|2|4|B|0|a|7|C|F|9|c|8|b|E|.61|d|e|D|5|3|A|f|2|4|B|0|a|7|C|F|9|c|8|b|E|*.pP|@-+||.56|3|7|1|9|2|4|8|0|.56|3|7|1|9|2|4|8|0|*..@fF|l|L||. , action:['printf("CONSTANT");']
+rule 49: pattern:0xX|.61|d|e|D|5|3|A|f|2|4|B|0|a|7|C|F|9|c|8|b|E|.61|d|e|D|5|3|A|f|2|4|B|0|a|7|C|F|9|c|8|b|E|*.`..61|d|e|D|5|3|A|f|2|4|B|0|a|7|C|F|9|c|8|b|E|*.pP|@-+||.56|3|7|1|9|2|4|8|0|.56|3|7|1|9|2|4|8|0|*..@fF|l|L||. , action:['printf("CONSTANT");']
+rule 50: pattern:@L|".\wY||v|k|r|S|n|=|2|B|H|	|m|9|c|`)|z|u|x|}|!|<|1|`||U|d|e|K|M|3|[|"|J|W|i|N|?|o|O|P|E|Z|&|6|`*|{||'|5|-|A|g|_|:|G|f|0|a|7|C|h|q|I|V|y|j|%|/|`(|~|p|#| |>|l|]|^|R|s|L|D|Q|+|4|t|X|`.|T|F|8|\|;|b|,|.wY||v|k|r|S|n|=|2|B|H|	|m|9|c|`)|z|u|x|}|!|<|1|`||U|d|e|K|M|3|[|J|W|i|N|?|o|O|P|E|Z|&|6|`*|{||'|5|-|A|g|_|:|G|f|0|a|7|C|h|q|I|V|y|j|%|/|`(|~|p|#| |>|l|]|^|R|s|L|D|Q|+|4|t|X|`.|T|F|8|;|b|,||*.". , action:['printf("STRING_LITERAL");']
 rule 51: pattern:`.`..`.. , action:['printf("ELLIPSIS");']
 rule 52: pattern:>>.=. , action:['printf("RIGHT_ASSIGN");']
 rule 53: pattern:<<.=. , action:['printf("LEFT_ASSIGN");']
@@ -95,6 +95,6 @@ rule 93: pattern:> , action:['printf(">");']
 rule 94: pattern:^ , action:['printf("^");']
 rule 95: pattern:`| , action:['printf("||");']
 rule 96: pattern:? , action:['printf("?");']
-rule 97: pattern:	| ||
-| , action:['printf("SPACE");']
-rule 98: pattern:z,|w|T|V||-|=|m|s|^|~|b|e|	|_| |i|o|u|7|'|U|A|a|v|Z|y|`.|L|"|<|S|{|D|K|?|8|O|6|;|#|E|>|\|+|n|0|}|!|p|1|h|J|%|4|N|j|H|r|l|x|9|q||`*|/|c|2|t|G|R|Y|5|Q|X|]|`(|d|`)|C|`||g|3|[|f|M|I|W|:|B|F|&|P|k| , action:['printf("ERROR!");']
+rule 97: pattern: |
+||	| , action:['printf("SPACE");']
+rule 98: pattern:wY||v|k|r|S|n|=|2|B|H|	|m|9|c|`)|z|u|x|}|!|<|1|`||U|d|e|K|M|3|[|"|J|W|i|N|?|o|O|P|E|Z|&|6|`*|{||'|5|-|A|g|_|:|G|f|0|a|7|C|h|q|I|V|y|j|%|/|`(|~|p|#| |>|l|]|^|R|s|L|D|Q|+|4|t|X|`.|T|F|8|\|;|b|,| , action:['printf("ERROR!");']

@@ -15,6 +15,7 @@ arg_parse = ArgumentParser(prog="lex writen by Yuan Yu, 2019.5.12",
 arg_parse.add_argument("inputFile", help="input file's url")
 arg_parse.add_argument("--output", "-o", help="output file's url")
 arg_parse.add_argument("--test", "-t", action="store_true")
+
 args = arg_parse.parse_args()
 if args.output is None:
     args.output = "output.l"
@@ -63,6 +64,7 @@ if __name__ == '__main__':
 
 # -------------------------------- end of test of reparser --------------------------------------
     else:
-        arrays, endVec, mini_dfa= re_parser.parseRegexs(rules, maps)
-        mode = Mode.LEX_TEST
-        c_code_generator(arrays, endVec, p1, p4, mini_dfa.startState, mode, args.output)
+        arrays, endVec, mini_dfa = re_parser.parseRegexs(rules, maps)
+        mode = Mode.YACC_TEST
+        print("C code Generating...")
+        c_code_generator.generate_c_code(arrays, endVec, p1, p4, mini_dfa.startState, mode, args.output)

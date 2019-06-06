@@ -113,7 +113,7 @@ class CCodeGenerator:
                 file.write("\t}\n")
 
             elif mode == Mode.LEX_TEST:
-                file.write("\t\tprintf(\"\");\n")
+                file.write("\tprintf(\" \");\n")
                 file.write("\tyy_current_state = START_STATE;\n")
                 file.write("\tyy_last_accepting_state = -1;\n")
                 file.write("\t++yy_cp;\n")
@@ -200,7 +200,7 @@ class CCodeGenerator:
             file.write("rewind(fp);\n") # 定位到文件开头
             file.write("memset(cp,0,flen+1);\n")
             file.write("fread(cp, sizeof(char), flen, fp);\n")  # 一次性读取全部文件内容
-            file.write("cp[flen] = 0; \n") # 字符串结束标志
+            file.write("cp[flen] = 0; \n")  # 字符串结束标志
             file.write("return cp;\n")
             file.write("}\n")
     
